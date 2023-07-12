@@ -39,7 +39,7 @@ button {
 
 }
 button{
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1rem;
 }
 
@@ -77,7 +77,7 @@ b {
 
 .containerPlain {
   padding: 4rem 1rem;
-  max-width: 60rem;
+  max-width: 75rem;
   margin: 0 auto;
 }
 
@@ -94,10 +94,6 @@ b {
 .greyBackground{
   margin: 0 auto;
   background: var(--backgroundGrey)
-}
-
-.page-container {
-  margin-top: 3.5rem;
 }
 /* ---------- Other ---------- */
 
@@ -116,7 +112,8 @@ b {
 
 .pageHeadingPurpleSmall{
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
   color: var(--primaryPurple);
 }
 
@@ -126,5 +123,7 @@ code {
 }
 
 @media only screen and (max-width: 480px) {
-
+  .pageHeadingPurpleSmall{
+    font-size: 2rem;
+  }
 }

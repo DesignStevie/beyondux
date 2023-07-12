@@ -1,19 +1,22 @@
-import { React } from "react";
+import { React, useEffect } from "react";
 import "./Project.css";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useLocation } from "react-router-dom";
 import Footer from "../Components/Footer/Footer";
-import NavBar from "../Components/NavBar/NavBar";
 import projectData from "../Data/ProjectData";
 
 function Project(myProjectData) {
   const projectNameFromUrl = useParams().project;
+  const {pathname} = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, [pathname]);
 
   const [displayProject] = projectData.filter((projectObj) => {
     return "/" + projectNameFromUrl === projectObj.linkName;
   });
   return (
     <>
-      <NavBar />
       <div className="page-container">
         <div className="greyBackground">
           <div className="containerPlain">
@@ -23,9 +26,9 @@ function Project(myProjectData) {
               <img src={displayProject.headerImage} alt="Final Solution" />
             </div>
             <div className="projectDetailsContainer">
-              <p className="projectIntroductionText">
+              <div className="projectIntroductionText">
                 {displayProject.problem}
-              </p>
+              </div>
               <div className="projectDetails">
                 <div className="details">
                   <h4>COMPANY</h4>
@@ -139,7 +142,7 @@ function Project(myProjectData) {
                   <Link
                     key={key}
                     className="workitem-container"
-                    to={"/my-work" + project.linkName}
+                    to={project.linkName}
                   >
                     <img
                       className="project-image"
@@ -147,15 +150,11 @@ function Project(myProjectData) {
                       alt="project"
                     />
                     <div className="workitem-content">
-                    <h1>0{project.id + 1}</h1>
                       <h2 className="pageHeadingPurpleSmall">
                         {" "}
                         {project.projectName}
                       </h2>
                       <p> {project.short_description}</p>
-                      <button className="roundbutton secondary-button">
-                        View Project
-                      </button>
                     </div>
                   </Link>
                 );

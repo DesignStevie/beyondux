@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 import Home from "./Pages/Home";
-import MyWork from "./Pages/MyWork";
-import Resume from "./Pages/Resume";
 import Project from "./Pages/Project";
 import projectData from "./Data/ProjectData";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
@@ -9,14 +8,11 @@ import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 function App() {
   return (
     <>
-      <ScrollToTop />
+    <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/my-work" element={<MyWork />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/#contact" element={<Home />} />
         <Route
-          path="/my-work/:project"
+          path="/:project"
           element={<Project projectData={projectData} />}
         />
       </Routes>

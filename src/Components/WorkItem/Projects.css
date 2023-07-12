@@ -1,7 +1,7 @@
 .workitems {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 .workitem-container {
   text-decoration: none;
@@ -13,7 +13,7 @@
   height: auto;
   display: flex;
   flex-direction: row;
-  gap: 4rem;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -56,16 +56,11 @@
   padding: 1rem 4rem 1rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-}
-
-.workitem-content h1 {
-  color: #e7e5ff;
-  line-height: 3.5rem;
+  gap: 2rem;
 }
 
 .workitem-container h4 {
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: #4f4f4f;
 }
 
@@ -75,6 +70,7 @@ Link {
 .workitem-content p {
   color: #2e2e2e;
   font-weight: 300;
+  font-size: 1.25rem;
   padding-bottom: 1rem;
 }
 
