@@ -240,6 +240,8 @@ a {
   }
   .dotText {
     font-size: 1rem;
+    position: absolute;
+    bottom: 10rem;
   }
   .dotText svg{
     display: none;
@@ -255,7 +257,7 @@ a {
     transform: scale(150%);
     right: 0;
     left: 0;
-    bottom: 4rem;
+    bottom: 6rem;
     margin: auto;
   }
   .headerContact{
