@@ -1,13 +1,130 @@
-body {
+:root{
+  --primaryPurple: #5D4FFF;
+  --secondaryPurple: #E7E5FF;
+  --tertiaryPurple: #F7F6FF;
+  --pink: #BD4FFF;
+  --primaryGrey: #333;
+  --secondaryGrey: #4F4F4F;
+  --tertiaryGrey: #EEE;
+  --backgroundGrey: #FAFAFA;
+  --globalWhite: #FFF;
+
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* ---------- Typography ---------- */
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+
+}
+button{
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 1rem;
+  line-height: 0.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1rem;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 3rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+b {
+  font-weight: 600;
+}
+
+/* ---------- Containers ---------- */
+
+.containerPlain {
+  padding: 4rem 1rem;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.colouredBackground {
+  margin: 0 auto;
+  background: rgb(189, 79, 255);
+  background: linear-gradient(
+    125deg,
+    rgba(189, 79, 255, 1) 0%,
+    rgba(93, 79, 255, 1) 100%
+  );
+}
+
+.greyBackground{
+  margin: 0 auto;
+  background: var(--backgroundGrey)
+}
+
+.page-container {
+  margin-top: 3.5rem;
+}
+/* ---------- Other ---------- */
+
+.pageHeadingWhite {
+  font-weight: 600;
+  font-size: 4rem;
+  color: #fff;
+}
+
+.pageHeadingPurple {
+  font-weight: 600;
+  font-size: 4rem;
+  color: var(--primaryPurple);
+  margin-bottom: 4rem;
+}
+
+.pageHeadingPurpleSmall{
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--primaryPurple);
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@media only screen and (max-width: 480px) {
+
 }
