@@ -25,7 +25,7 @@ function Home() {
       <div className="headerContainer">
         <div className="headerGreetingContainer">
           <div className="headingName">
-            Hi, I'm <b>Steven Odendaal</b>
+            Hi, I'm <br></br><b>Steven Odendaal</b>
           </div>
           <div className="headingRole">i'm a UX/UI Designer.</div>
         </div>
@@ -369,7 +369,7 @@ function Home() {
             >
               <circle cx="6" cy="6" r="6" fill="white" />
             </svg>
-            Let me show you what I do . . .
+            Let me show you what I do
           </div>
           <div className="verticalLine"></div>
           <svg
