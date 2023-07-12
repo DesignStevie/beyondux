@@ -215,10 +215,16 @@ a {
     max-width: 100%;
   }
   .headerGreetingContainer{
-    padding-top: 4rem;
+    padding-top: 8rem;
   }
   .headingName, .headingRole {
     font-size: 2rem;
+  }
+  .dotText{
+    font-size: 1rem;
+  }
+  .headerDots{
+    top: 9rem;
   }
   .contactContainer {
     flex-direction: column;
