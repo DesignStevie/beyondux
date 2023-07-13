@@ -1,7 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import ProjectData from "../../Data/ProjectData";
-import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -20,20 +18,6 @@ function Footer() {
             fill="#4F4F4F"
           />
         </svg>
-        <div className="footerProjects">
-          <h4>My Work</h4>
-          {ProjectData.map((project, key) => {
-            return (
-              <Link
-                key={key}
-                to={"/my-work" + project.linkName}
-                className="footerItem"
-              >
-                {project.projectName}
-              </Link>
-            );
-          })}
-        </div>
         <div className="footerContactSocials">
           <div className="footerEmail">
             <h4>Contact</h4>

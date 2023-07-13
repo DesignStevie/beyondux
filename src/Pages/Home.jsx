@@ -3,6 +3,7 @@ import { useRef } from "react";
 import Footer from "../Components/Footer/Footer";
 import MyImage from "../Images/me.png";
 import headerBackground from "../Images/Background.png";
+import aboutBackgroundImage from "../Images/aboutBackground.png";
 import Projects from "../Components/WorkItem/Projects";
 import "./Home.css";
 
@@ -25,7 +26,8 @@ function Home() {
       <div className="headerContainer">
         <div className="headerGreetingContainer">
           <div className="headingName">
-            Hi, I'm <br></br><b>Steven Odendaal</b>
+            Hi, I'm <br></br>
+            <b>Steven Odendaal</b>
           </div>
           <div className="headingRole">i'm a UX/UI Designer.</div>
         </div>
@@ -476,7 +478,341 @@ function Home() {
             </div>
             <img className="profileImage" src={MyImage} alt="face" />
           </div>
+          <svg
+          className="aboutDots"
+          width="240"
+          height="144"
+          viewBox="0 0 240 144"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 16 32)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 144 32)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 80 32)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 208 32)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 48 32)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 176 32)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 112 32)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 240 32)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 16 96)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 144 96)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 80 96)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 208 96)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 48 96)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 176 96)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 112 96)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 240 96)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 16 128)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 144 128)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 80 128)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 208 128)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 48 128)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 176 128)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 112 128)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 240 128)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 16 0)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 144 0)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 80 0)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 208 0)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 48 0)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 176 0)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 112 0)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 240 0)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 16 64)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 144 64)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 80 64)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 208 64)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 48 64)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 176 64)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 112 64)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+          <circle
+            cx="8"
+            cy="8"
+            r="8"
+            transform="matrix(-1 0 0 1 240 64)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+        </svg>
         </div>
+        <img
+          className="aboutBackgroundImage"
+          src={aboutBackgroundImage}
+          alt="face"
+        />
       </div>
       <Footer />
     </>

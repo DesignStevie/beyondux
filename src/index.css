@@ -49,12 +49,12 @@ h4 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 1rem;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   line-height: 1.5rem;
 }
@@ -67,10 +67,22 @@ h1 {
 
 p {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 b {
   font-weight: 600;
+}
+
+.primaryColor{
+  color: var(--primaryPurple) !important;
+}
+
+.primaryGreyColor{
+  color: var(--primaryGrey) !important
+}
+
+.disabledGreyColor{
+  color: var(--tertiaryGrey) !important
 }
 
 /* ---------- Containers ---------- */
@@ -79,10 +91,13 @@ b {
   padding: 4rem 1rem;
   max-width: 75rem;
   margin: 0 auto;
+  position: relative;
 }
 
 .colouredBackground {
   margin: 0 auto;
+  z-index: -2;
+  position: relative;
   background: rgb(189, 79, 255);
   background: linear-gradient(
     125deg,
@@ -94,6 +109,39 @@ b {
 .greyBackground{
   margin: 0 auto;
   background: var(--backgroundGrey)
+}
+/* ---------- Buttons ---------- */
+
+.roundbutton {
+  border-radius: 1rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  cursor: pointer;
+}
+.secondaryButton {
+  border: 2px solid var(--globalWhite);
+  background: none;
+  color: var(--globalWhite);
+  transform: scale(100%);
+  transition: transform ease 300ms;
+}
+
+.secondaryButton:hover {
+  background: rgba(255 255 255 / 0.15);
+  transform: scale(105%);
+}
+
+.primaryButton {
+  border: 2px solid var(--primaryPurple);
+  background: none;
+  color: var(--primaryPurple);
+  transform: scale(100%);
+  transition: transform ease 300ms;
+}
+
+.primaryButton:hover {
+  background: rgba(93 75 255 / 0.1);
+  transform: scale(105%);
 }
 /* ---------- Other ---------- */
 

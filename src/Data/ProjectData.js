@@ -1,11 +1,12 @@
 const projectData = [
   {
     id: 0,
+    release: true,
     projectName: "Onboarding Wizard",
-    linkName: "/oboarding_wizard",
+    linkName: "/onboarding-wizard",
     company: "Gallagher New Zealand",
     squad: "1 Product Manager, 4 Engineers, 2 Testers",
-    timeframe: " Oct 2022 - Feb 2023",
+    timeframe: "Oct 2022 - Feb 2023",
     short_description:
       "Creating a cloud security management solution for cardholder and building control.",
     image: require("../Images/tile_image_webclient.png"),
@@ -32,11 +33,12 @@ const projectData = [
   },
   {
     id: 1,
+    release: true,
     projectName: "Two Factor Authenticator",
-    linkName: "/two_factor_authenticator",
+    linkName: "/two-factor-authenticator",
     company: "Gallagher New Zealand",
     squad: "1 Product Manager, 3 Engineers, 2 Testers",
-    timeframe: " Jan 2022 - Apr 2022",
+    timeframe: "Jan 2022 - Apr 2022",
     short_description:
       "Revamping and adding a 2FA Solution to a pre-existing mobile credential app for IOS & Android.",
     image: require("../Images/tile_image_credentials.png"),
@@ -63,15 +65,14 @@ const projectData = [
   },
   {
     id: 2,
+    release: true,
     projectName: "Credential Request",
     linkName: "/credential_request",
     company: "Gallagher New Zealand",
     squad: "1 Product Manager, 4  Engineers, 2 Testers",
-    timeframe: " Oct 2022 - Mar 2023",
+    timeframe: "Oct 2022 - Mar 2023",
     short_description:
       "Creating a new self service credential and access management cloud solution.",
-    long_description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit. \n \n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
     image: require("../Images/tile_image_arw.png"),
     problem:
       "Another squads main focus was to design and develop a full Cloud Access Management solution for credential and access control that was customer driving in user experience. \n \n One of many features, we needed to create an MVP solution for the end requesters (i.e Employees) to enable them to quickly and effectively request new credentials from their organization and could be processed by the corresponding approvers (i.e HR Admins) within the system. \n \n I took to this task working with my squad in an agile environment to iterate on this feature with our customers to create a viable solution. ",
@@ -87,6 +88,38 @@ const projectData = [
       "We went into Wintec and organised a time to get 15 students to work through some scenarios and complete the tasks on my prototype. The students would be a targeted persona and what be a great set of users to get honest feedback from. \n \n We separated the Groups to do one task for requesting a new credential and we had the other group request a replacement credential. \n \n We had a complete 100% completion rate and got some great feedback and suggestions from the students.",
     finalSolution:
       "After finalising data we received from all the test users I made some minor adjustments to the prototype and could confidently push it over to the developers to build. \n \n We will continue refining and make any further adjustments in the future as we get more feedback from all our users.",
+    headerImage: require("../Images/RequestCredentialFinal.png"),
+    empathiseImage: require("../Images/discoverImagePlaceholder02.png"),
+    researchImage: require("../Images/ARW_Research.png"),
+    ideateImage: require("../Images/ARW_Ideate.png"),
+    prototypeImage: require("../Images/ARW_Prototype.png"),
+    finalSolutionImage: require("../Images/finalSolution_ARW.png"),
+  },
+  {
+    id: 3,
+    release: false,
+    projectName: "License Portal",
+    linkName: "/license-portal",
+    company: "Gallagher New Zealand",
+    squad: "1 Product Manager, 4  Engineers, 2 Testers",
+    timeframe: "Feb 2023 - Aug 2023",
+    short_description:
+      "Designing a self-service portal to manage product licenses to its users.",
+    problem:
+      "Another squads main focus was to design and develop a full Cloud Access Management solution for credential and access control that was customer driving in user experience. \n \n One of many features, we needed to create an MVP solution for the end requesters (i.e Employees) to enable them to quickly and effectively request new credentials from their organization and could be processed by the corresponding approvers (i.e HR Admins) within the system. \n \n I took to this task working with my squad in an agile environment to iterate on this feature with our customers to create a viable solution. ",
+    understand:
+      "For this feature we looked to bringing all knowledge from across the teams and internal stakeholders as to what we expect this requesting workflow will look and what the users will experience. \n \n We took all this information and set out to discover what our customers and users will expect and want from this eperience.",
+    research:
+      "We went out to our customers and users that would fit our persona for this feature and interviewed them to get a broader idea as to what they would expect the requesting service will look like and what will be expected of their users. \n \n I looked at competitors solutions as well and found some common ground between them and how they solved their solution. I would use this as inspiration and make certain aspects a part from my own solution",
+    ideate:
+      "I took all the knowledge and information taken from the first two phases above and set out to create my own unique solution that would suit and satisfy the problem. \n \n I worked back and forth with customers and my own squad to refine my workings based on their critique, feedback and suggestions and come up with a final solution that can move into the prototyping phase. \n \n I knew this will still need more refinement but needed to begin prototyping so that I can jump straight into testing my solution to truly discover if there are any problems that need ironing out.",
+    prototype:
+      "After having my final solution ready to go I then set out to create the final prototype and jumps straight into testing with some users. \n \n I designed a hi-fi prototype in Figma using the design system I created for our entire department for all our different platforms and projects. \n \n After going back to my squad for some refinements, feedback and critiques on the workflow I then was ready to take this out into the field to be tested.",
+    validate:
+      "We went into Wintec and organised a time to get 15 students to work through some scenarios and complete the tasks on my prototype. The students would be a targeted persona and what be a great set of users to get honest feedback from. \n \n We separated the Groups to do one task for requesting a new credential and we had the other group request a replacement credential. \n \n We had a complete 100% completion rate and got some great feedback and suggestions from the students.",
+    finalSolution:
+      "After finalising data we received from all the test users I made some minor adjustments to the prototype and could confidently push it over to the developers to build. \n \n We will continue refining and make any further adjustments in the future as we get more feedback from all our users.",
+    image: require("../Images/cover_licensePortal.png"),
     headerImage: require("../Images/RequestCredentialFinal.png"),
     empathiseImage: require("../Images/discoverImagePlaceholder02.png"),
     researchImage: require("../Images/ARW_Research.png"),

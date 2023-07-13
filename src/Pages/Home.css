@@ -143,43 +143,11 @@ br {
   gap: 1rem;
 }
 
-.roundbutton {
-  border-radius: 1rem;
-  border: none;
-  cursor: pointer;
-}
-.secondaryButton {
-  border: 2px solid var(--globalWhite);
-  background: none;
-  color: var(--globalWhite);
-  padding: 1rem 2.5rem;
-  transform: scale(100%);
-  transition: transform ease 300ms;
-}
-
-.secondaryButton:hover {
-  background: rgba(255 255 255 / 0.15);
-  transform: scale(105%);
-}
-
-.primary-button {
-  color: #fff;
-  background: rgb(189, 79, 255);
-  background: linear-gradient(
-    125deg,
-    rgba(189, 79, 255, 1) 0%,
-    rgba(93, 79, 255, 1) 100%
-  );
-}
-
-.primary-button:hover {
-  opacity: 0.9;
-}
-
 .aboutMeContainer {
   position: relative;
   display: flex;
   flex-direction: row;
+  margin-top: 1rem;
 }
 
 .paragraph-content {
@@ -187,7 +155,7 @@ br {
 }
 
 .profileImage {
-  width: 35%;
+  width: 34%;
   position: absolute;
   right: 0;
   bottom: -4rem;
@@ -213,6 +181,19 @@ br {
 a {
   text-decoration: none;
   color: #fff;
+}
+
+.aboutBackgroundImage{
+  position: absolute;
+  z-index: -1;
+  top:0;
+}
+.aboutDots{
+  position: absolute;
+  top: 4rem;
+  right: 3rem;
+  z-index: -1;
+  transform: scale(120%);
 }
 /*---------------------*/
 
@@ -300,32 +281,15 @@ a {
     width: 80%;
     left: -1rem;
   }
-  .paragraph-content {
-    width: 100%;
-  }
-  .paragraph-content {
-    width: 100%;
-  }
-  .first {
-    bottom: 35%;
-    width: 6rem;
-    height: 6rem;
+  .aboutDots{
+    right: 0;
+    left: 0;
+    bottom: 14rem;
     top: auto;
-    left: 70%;
+    margin: auto;
   }
-  .second {
-    left: -15%;
-    bottom: 1rem;
-    width: 8rem;
-    height: 8rem;
-    z-index: -30;
-  }
-  .third {
-    bottom: 0;
-    right: -6rem;
-    top: -4rem;
-    width: 15rem;
-    height: 15rem;
+  .paragraph-content {
+    width: 100%;
   }
   .page-body {
     width: 100%;
