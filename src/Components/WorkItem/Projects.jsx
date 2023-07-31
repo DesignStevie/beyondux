@@ -21,7 +21,7 @@ function Projects() {
                 >
                   <img
                     className="project-image"
-                    src={project.image}
+                    src={project.coverImage}
                     alt="project"
                   />
                   <div className="workitem-content">
@@ -32,10 +32,10 @@ function Projects() {
                   </div>
                 </Link>
               ) : (
-                <div className="comingSoonContainer">
+                <div className="comingSoonContainer" key={key}>
                   <img
                     className="project-image"
-                    src={project.image}
+                    src={project.coverImage}
                     alt="project"
                   />
                   <div className="workitem-content">

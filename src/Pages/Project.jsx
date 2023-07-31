@@ -1,4 +1,4 @@
-import { React, useEffect } from "react";
+import { React, useEffect, useState } from "react";
 import "./Project.css";
 import { useParams, Link, useLocation } from "react-router-dom";
 import Footer from "../Components/Footer/Footer";
@@ -6,10 +6,12 @@ import projectData from "../Data/ProjectData";
 
 function Project(myProjectData) {
   const projectNameFromUrl = useParams().project;
-  const {pathname} = useLocation();
+  const [count, setCount] = useState(3);
+  const { pathname } = useLocation();
+  const projectsCount = projectData.length - 1;
 
   useEffect(() => {
-    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, [pathname]);
 
   const [displayProject] = projectData.filter((projectObj) => {
@@ -32,15 +34,15 @@ function Project(myProjectData) {
               <div className="projectDetails">
                 <div className="details">
                   <h4>COMPANY</h4>
-                  <p>{displayProject.company}</p>
+                  <p>{displayProject.projectDetails[0]}</p>
                 </div>
                 <div className="details">
                   <h4>SQUAD</h4>
-                  <p>{displayProject.squad}</p>
+                  <p>{displayProject.projectDetails[1]}</p>
                 </div>
                 <div className="details">
                   <h4>TIMEFRAME</h4>
-                  <p>{displayProject.timeframe}</p>
+                  <p>{displayProject.projectDetails[2]}</p>
                 </div>
               </div>
             </div>
@@ -134,31 +136,62 @@ function Project(myProjectData) {
           </div>
         </div>
         <div className="containerPlain">
+          <h2 className="moreProjectsTitle">More Projects</h2>
           <div className="workitems">
             {projectData
-              .filter((projectData) => projectData.id !== displayProject.id)
+              .filter(
+                (projectData) =>
+                  projectData.projectName !== displayProject.projectName
+              )
+              .slice(0, count)
               .map((project, key) => {
                 return (
-                  <Link
-                    key={key}
-                    className="workitem-container"
-                    to={project.linkName}
-                  >
-                    <img
-                      className="project-image"
-                      src={project.image}
-                      alt="project"
-                    />
-                    <div className="workitem-content">
-                      <h2 className="pageHeadingPurpleSmall">
-                        {" "}
-                        {project.projectName}
-                      </h2>
-                      <p> {project.short_description}</p>
-                    </div>
-                  </Link>
+                  <>
+                    {project.release ? (
+                      <Link
+                        key={key}
+                        className="workitem-container"
+                        to={project.linkName}
+                      >
+                        <img
+                          className="project-image"
+                          src={project.coverImage}
+                          alt="project"
+                        />
+                        <div className="workitem-content">
+                          <h2 className="pageHeadingPurpleSmall">
+                            {project.projectName}
+                          </h2>
+                          <p> {project.short_description}</p>
+                        </div>
+                      </Link>
+                    ) : (
+                      <div key={key} className="comingSoonContainer">
+                        <img
+                          className="project-image"
+                          src={project.coverImage}
+                          alt="project"
+                        />
+                        <div className="workitem-content">
+                          <h2 className="primaryGreyColor">
+                            {project.projectName}
+                          </h2>
+                          <p> {project.short_description}</p>
+                          <p className="primaryColor">Coming Soon</p>
+                        </div>
+                      </div>
+                    )}
+                  </>
                 );
               })}
+            {count < projectsCount && (
+              <button
+                onClick={() => setCount(count + 3)}
+                className="viewMore roundbutton primaryButton"
+              >
+                View More
+              </button>
+            )}
           </div>
         </div>
       </div>
