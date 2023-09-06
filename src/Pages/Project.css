@@ -63,15 +63,9 @@
   background-color: var(--secondaryGrey);
 }
 
-.projectHeading{
-  text-align: center;
-  margin-top: 0.75rem !important;
-}
-
 .headerImage img{
   width: 100%;
   object-fit: contain;
-  margin-bottom: 6rem;
   filter: drop-shadow(0rem 0rem 1rem rgb(27 0 49 / 0.35));
 }
 .projectDetailsContainer{
@@ -102,14 +96,22 @@
   flex-direction: row;
   align-items: center;
   gap:0.5rem;
+  fill: var(--primaryPurple)
 }
+
+.iconTitle svg{
+  fill: var(--primaryPurple)
+}
+
 .process-header {
   display: flex;
   gap: 0.5rem;
   align-items: center;
   padding-bottom: 1.5rem;
 }
-
+.process-header svg{
+  fill: var(--primaryPurple)
+}
 .processName {
   font-size: 1.25rem;
   color: var(--primaryGrey);
@@ -132,6 +134,7 @@
   background-color: var(--backgroundGrey);
   border: 1px solid var(--tertiaryGrey);
   width: calc(100% - 14rem) !important;
+  margin: 0 auto;
 }
 .process-text {
   white-space: pre-line;
@@ -159,14 +162,29 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .navContainer{
+    left: 1rem;
+    top: 1rem;
+  }
+  .homeButton{
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+  }
+
+  .projectNav{
+    display: none;
+  }
+
   .projectDetailsContainer{
     flex-direction: column;
   }
   .headerImage img{
     margin-bottom: 2rem;
   }
-  .pageHeadingPurple{
-    font-size: 3rem;;
+  .projectHeading{
+    line-height: 2.5rem;
+    margin: 4rem 0 !important;
+    font-size: 2rem;
   }
   .projectHeaderInner{
     padding: 0 1rem;
@@ -174,8 +192,8 @@
   .projectImages {
     flex-direction: column;
   }
-  .process-container {
-    flex-direction: column;
+  .processContainer{
+    width: calc(100% - 4rem) !important;
   }
   .projectDetails{
     flex-direction: column;

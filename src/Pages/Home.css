@@ -7,12 +7,12 @@
   right: 0;
   overflow: hidden;
   background-image: linear-gradient(
-    to right bottom,
-    #5d4fff,
-    #7a4fff,
-    #934fff,
-    #a84fff,
-    #bc4fff
+    to right top,
+    #2e3192,
+    #0058b6,
+    #007ed4,
+    #00a3ec,
+    #1bc8ff
   );
 }
 .headerbackgroundImage {
@@ -32,27 +32,65 @@
   position: relative;
   display: flex;
   flex-direction: column;
-}
-.headerGreetingContainer {
-  padding-top: 13rem;
+  justify-content: center;
 }
 
-.headerDots {
+/* .headerDots {
   position: absolute;
   right: 2rem;
   top: 14rem;
+} */
+
+.headerGreetingContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+.logoFaceContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.headingText {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: onLoad 400ms;
 }
 
-br {
-  display: none;
+@keyframes onLoad {
+  0%   {transform: translateX(-4rem);}
+  100% {transform: translateX(0);}
 }
 
-.headingName,
-.headingRole {
+.name {
   font-size: 4rem;
-  font-weight: 200;
+  line-height: 3.125rem;
   color: var(--globalWhite);
 }
+.role {
+  font-size: 2.5rem;
+  font-weight: 200;
+  line-height: normal;
+  color: var(--globalWhite);
+}
+
+.contactSocials {
+  display: flex;
+  gap: 1rem;
+}
+
+.contactSocials svg {
+  fill: rgba(255 255 255 / 0.75);
+  transition: transform ease 300ms;
+}
+
+.contactSocials svg:hover {
+  fill: rgba(255 255 255 / 1);
+  transform: scale(110%);
+}
+
 .scrollArrow {
   margin-top: 4rem;
   position: relative;
@@ -107,14 +145,14 @@ br {
 .lastContainer {
   margin-bottom: 7.5rem !important;
 }
+
 /*---------------------*/
 
-.about-me .sectionHeading .headerLine {
+ .sectionHeading .headerLine {
   background-color: #fff;
 }
 
-.about-me .sectionHeading h2,
-.about-me .paragraph-content {
+.sectionHeading h2, .paragraphContent {
   color: #fff;
 }
 
@@ -133,11 +171,6 @@ br {
   color: #2e2e2e;
 }
 
-.social-icons {
-  display: flex;
-  gap: 1rem;
-}
-
 .home-header-buttons {
   display: flex;
   gap: 1rem;
@@ -150,7 +183,7 @@ br {
   margin-top: 1rem;
 }
 
-.paragraph-content {
+.paragraphContent {
   width: 60%;
 }
 
@@ -160,9 +193,9 @@ br {
   right: 0;
   bottom: -4rem;
 }
-.paragraph-content p {
+.paragraphContent p {
   margin-top: 1.5rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 
@@ -173,22 +206,18 @@ br {
   flex-direction: column;
   gap: 2rem;
 }
-.contactSocials {
-  display: flex;
-  gap: 1rem;
-}
 
 a {
   text-decoration: none;
   color: #fff;
 }
 
-.aboutBackgroundImage{
+.aboutBackgroundImage {
   position: absolute;
   z-index: -1;
-  top:0;
+  top: 0;
 }
-.aboutDots{
+.aboutDots {
   position: absolute;
   top: 4rem;
   right: 3rem;
@@ -202,31 +231,36 @@ a {
     max-width: 100%;
   }
   .headerGreetingContainer {
-    margin: auto 0;
+    flex-direction: column;
   }
-  .headingName,
-  .headingRole {
-    font-size: 2rem;
+  .headingText {
+    align-items: center;
+  }
+  .name {
+    font-size: 2.5rem;
+  }
+  .role {
+    font-size: 1.5rem;
     text-align: center;
   }
   br {
     display: block;
   }
-  .verticalLine{
+  .verticalLine {
     display: none;
   }
-  .scrollArrow{
+  .scrollArrow {
     display: flex;
     justify-content: center;
   }
-  .dotText {
+  /* .dotText {
     font-size: 1rem;
     position: absolute;
     bottom: 10rem;
-  }
-  .dotText svg{
+  } */
+  /* .dotText svg{
     display: none;
-  }
+  } */
   .headerDots {
     right: 0;
     left: 0;
@@ -234,14 +268,14 @@ a {
     margin: auto;
     transform: scale(80%);
   }
-  .arrow{
+  .arrow {
     transform: scale(150%);
     right: 0;
     left: 0;
     bottom: 6rem;
     margin: auto;
   }
-  .headerContact{
+  .headerContact {
     display: none;
   }
   .contactContainer {
@@ -281,14 +315,14 @@ a {
     width: 80%;
     left: -1rem;
   }
-  .aboutDots{
+  .aboutDots {
     right: 0;
     left: 0;
     bottom: 14rem;
     top: auto;
     margin: auto;
   }
-  .paragraph-content {
+  .paragraphContent {
     width: 100%;
   }
   .page-body {

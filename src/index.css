@@ -1,5 +1,5 @@
 :root{
-  --primaryPurple: #5D4FFF;
+  --primaryPurple: #2A58AF;
   --secondaryPurple: #E7E5FF;
   --tertiaryPurple: #F7F6FF;
   --pink: #BD4FFF;
@@ -54,7 +54,7 @@ h3 {
   line-height: 1rem;
 }
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 1.5rem;
 }
@@ -88,7 +88,7 @@ b {
 /* ---------- Containers ---------- */
 
 .containerPlain {
-  padding: 2.5rem 1rem;
+  padding: 4rem 1rem;
   max-width: 60rem;
   margin: 0 auto;
   position: relative;
@@ -99,11 +99,13 @@ b {
   margin: 0 auto;
   z-index: -2;
   position: relative;
-  background: rgb(189, 79, 255);
-  background: linear-gradient(
-    125deg,
-    rgba(189, 79, 255, 1) 0%,
-    rgba(93, 79, 255, 1) 100%
+  background-image: linear-gradient(
+    to right top,
+    #2e3192,
+    #0058b6,
+    #007ed4,
+    #00a3ec,
+    #1bc8ff
   );
 }
 
@@ -162,10 +164,9 @@ b {
 
 .pageHeadingGrey {
   font-weight: 600;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: var(--primaryGrey);
-  margin-top: 5rem;
-  margin-bottom: 4rem;
+  margin: 6rem 0;
 }
 
 .pageHeadingPurpleSmall{
