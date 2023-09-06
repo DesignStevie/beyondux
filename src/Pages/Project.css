@@ -102,7 +102,9 @@
 .iconTitle svg{
   fill: var(--primaryPurple)
 }
-
+.processContext{
+  white-space: pre-line;
+}
 .process-header {
   display: flex;
   gap: 0.5rem;

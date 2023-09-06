@@ -565,7 +565,7 @@ function Project(myProjectData) {
                   <p>{displayProject.projectDetails[2]}</p>
                 </div>
               </div>
-              <div>
+              <div className="processContext">
                 <div className="process-header">
                   <svg
                     width="24"
@@ -808,11 +808,12 @@ function Project(myProjectData) {
 
         {/* PROJECT --- FINAL SOLUTION */}
         <div className="process-image">
-          <img
+          {displayProject.finalSolutionImage !== "" && <img
             src={displayProject.finalSolutionImage}
             alt="Final_solution_image"
-          />
+          /> }
         </div>
+       
 
         <div className="containerPlain">
           <h2 className="moreProjectsTitle">View more projects</h2>
