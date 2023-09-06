@@ -376,7 +376,6 @@ function Home() {
           <div className="verticalLine"></div>
           <svg
             onClick={scrollToWork}
-            ref={toWork}
             className="arrow"
             width="32"
             height="32"
@@ -434,7 +433,7 @@ function Home() {
             </a>
           </div>
           <a href="mailto: stevenodendaal98@gmail.com">
-            <button className="roundbutton secondaryButton">Let's chat</button>
+            <button className="roundbutton primaryButton">Let's chat</button>
           </a>
           <b className="emailAddress"> stevenodendaal98@gmail.com</b>
         </div>
@@ -442,7 +441,7 @@ function Home() {
 
       {/* HOME --- MY WORK */}
 
-      <div className="containerPlain">
+      <div ref={toWork} className="containerPlain">
         <Projects />
       </div>
 

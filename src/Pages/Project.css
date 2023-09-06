@@ -14,6 +14,60 @@
 }
 
 /* ---------- Project Header ---------- */
+.navContainer{
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: fixed;
+  left: 1.5rem;
+  top: 1.5rem;
+}
+
+.homeButton{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: center;
+  background-color: var(--primaryGrey);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  padding: 1.25rem;
+  border-radius: 1rem;
+  color: var(--globalWhite);
+  cursor: pointer;
+  transition: transform ease 300ms;
+}
+.homeButton:hover{
+  transform: scale(105%);
+}
+.projectNav{
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--primaryGrey);
+  display: flex;
+  flex-direction: column;
+}
+.navItem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:0.75rem;
+  border-radius: 0.5rem;
+  background-color: var(--primaryGrey);
+  cursor: pointer;
+}
+.navFocus{
+  background-color: var(--secondaryGrey);
+}
+.navItem:hover{
+  background-color: var(--secondaryGrey);
+}
+
+.projectHeading{
+  text-align: center;
+  margin-top: 0.75rem !important;
+}
+
 .headerImage img{
   width: 100%;
   object-fit: contain;
@@ -22,12 +76,7 @@
 }
 .projectDetailsContainer{
   display: flex;
-  gap: 1.5rem;
-}
-
-.projectIntroductionText {
-  white-space: pre-line;
-  font-size: 1.25rem;
+  gap: 2.5rem;
 }
 
 .projectDetails{
@@ -36,29 +85,34 @@
   flex-direction: column;
   justify-content: space-between;
   min-width: 30%;
-  background: #f6f6f6;
+  border: 1px solid var(--tertiaryGrey);
   padding: 1.5rem;
   border-radius: 1rem;
 }
 
 .details h4{
-  color: #5d4fff;
+  color: var(--primaryGrey);
   font-weight: 600;
-  margin-bottom: 0.5rem;
 }
 
 /* ---------- Project Text ---------- */
 
+.iconTitle{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:0.5rem;
+}
 .process-header {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   align-items: center;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 .processName {
-  font-size: 2rem;
-  color: #5d4fff;
+  font-size: 1.25rem;
+  color: var(--primaryGrey);
 }
 
 .processImage{
@@ -72,10 +126,18 @@
 .projectSolution {
   color: #fff;
 }
+.processContainer{
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--backgroundGrey);
+  border: 1px solid var(--tertiaryGrey);
+  width: calc(100% - 14rem) !important;
+}
 .process-text {
   white-space: pre-line;
   vertical-align: bottom;
-  font-size: 1.25rem;
+
+  font-size: 1rem;
   color: #2e2e2e;
 }
 .process-textSolution {

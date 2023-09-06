@@ -5,7 +5,7 @@
   --pink: #BD4FFF;
   --primaryGrey: #333;
   --secondaryGrey: #4F4F4F;
-  --tertiaryGrey: #EEE;
+  --tertiaryGrey: #E0E0E0;
   --backgroundGrey: #FAFAFA;
   --globalWhite: #FFF;
 
@@ -18,7 +18,7 @@ html {
   margin: 0;
   position: relative;
   height: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   width: 100%;
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -49,7 +49,7 @@ h4 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: 600;
   line-height: 1rem;
 }
@@ -60,7 +60,7 @@ h2 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 3rem;
   font-weight: 600;
 }
@@ -88,13 +88,14 @@ b {
 /* ---------- Containers ---------- */
 
 .containerPlain {
-  padding: 4rem 1rem;
-  max-width: 75rem;
+  padding: 2.5rem 1rem;
+  max-width: 60rem;
   margin: 0 auto;
   position: relative;
 }
 
 .colouredBackground {
+  overflow-x: hidden;
   margin: 0 auto;
   z-index: -2;
   position: relative;
@@ -110,14 +111,16 @@ b {
   margin: 0 auto;
   background: var(--backgroundGrey)
 }
+
 /* ---------- Buttons ---------- */
 
 .roundbutton {
   border-radius: 1rem;
-  padding: 1rem 2.5rem;
+  padding: 1rem 1.5rem;
   border: none;
   cursor: pointer;
 }
+
 .secondaryButton {
   border: 2px solid var(--globalWhite);
   background: none;
@@ -127,22 +130,21 @@ b {
 }
 
 .secondaryButton:hover {
-  background: rgba(255 255 255 / 0.15);
   transform: scale(105%);
 }
 
 .primaryButton {
-  border: 2px solid var(--primaryPurple);
-  background: none;
-  color: var(--primaryPurple);
+  background: var(--primaryGrey);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  color: var(--globalWhite);
   transform: scale(100%);
   transition: transform ease 300ms;
 }
 
 .primaryButton:hover {
-  background: rgba(93 75 255 / 0.1);
   transform: scale(105%);
 }
+
 /* ---------- Other ---------- */
 
 .pageHeadingWhite {
@@ -158,16 +160,19 @@ b {
   margin-bottom: 4rem;
 }
 
+.pageHeadingGrey {
+  font-weight: 600;
+  font-size: 3.5rem;
+  color: var(--primaryGrey);
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+
 .pageHeadingPurpleSmall{
   font-weight: 600;
   font-size: 2.5rem;
   line-height: 2.5rem;
   color: var(--primaryPurple);
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
 
 @media only screen and (max-width: 480px) {
