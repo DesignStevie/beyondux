@@ -76,7 +76,7 @@ function Footer() {
       </div>
       <div className="footer-madeby">
         <hr className="footerLine" />
-        <p>Proudly built in React by Steven Odendaal</p>
+        <p>© 2023 Steven Odendaal</p>
       </div>
     </div>
   );

@@ -1,41 +1,34 @@
 const projectData = [
   {
     release: true,
-    projectName: "Onboarding Wizard",
-    linkName: "/onboarding-wizard",
-    short_description:
-      "Creating a cloud security management solution for cardholder and building control.",
-    coverImage: require("../Images/tile_image_webclient.png"),
+    projectName: "License Manager",
+    linkName: "/license_manager",
     projectDetails: [
       "Gallagher New Zealand",
-      "1 Product Manager, 4 Engineers, 2 Testers",
-      "Oct 2022 - Feb 2023",
+      "1 Product Manager, 3  Engineers, 2 Testers",
+      "Jan 2023 - Dec 2023",
     ],
-    problem:
-      "One of my squad's main focus was to shift a pre-existing on-premise software to an all-cloud solution while overhauling and improving all usability with new and existing customers. \n \n A large feature that we needed to overcome was an onboarding process of new Cardholder/Users to the site, this would be a new feature compared to the on-premise software but still utilising it’s existing features. \n \n I took to the task working with my squad in an agile environment to iterate on the feature to create a feasible onboarding solution.",
-    understand:
-      "We first began reaching out to our external stakeholders and looked at the existing on-premise solution for onboarding cardholders, we identified our target personas and created a journey map that reflects those business processes, we found that it had no clear built-in process for onboarding users as it was built to accommodate any type of business workflow, so every business would have its own set of workflows and could differ vastly from one another so we took the key similarities instead.  \n \n We also discovered this was a usability issue as it would also require extensive training and modules for the customers to be able to use and understand first. \n \n We knew we had to explore and create a solution that could do the same thing but still be easy and intuitive to understand and use without the training and modules.",
-    research:
-      "I then began speaking and interviewing our existing customers that use this feature on a day-to-day basis, these customers would fit our targeted persona as well so that we knew we are getting information from actual users. \n \n Because the current solution is quite all over the place we found out through our customers that a step-for-step process in onboarding a new Cardholder/User where all the necessary steps can be provided for them seemed to be a potential solution. \n \n I completed my research to look at competitors and how they achieve their solutions, as well as non-competitor research to see how other organisations do step-for-step onboarding.",
-    ideate:
-      "We proceeded together with the squad on discovering some lo-fi ideas to create a step-for-step solution for onboarding a new Cardholder/User by doing a crazy 8’s session together. \n \n We already had a form of a step-for-step process in mind before this phase but we continued to see if we can find some unique additions to the step-for-step process or even potentially a whole new solution. \n \n After the exercise, the squad voted on their most preferred design ideas and we decided collectively to proceed with a step-for-step wizard and added in some unique add ons from their designs to further enhance and improve the usability for the final solution.",
-    prototype:
-      "After we put together all the pieces in our ideation phase I then set out to create the final prototype which we could go and test with our customers/users to validate the solution. \n \n I designed a hi-fi prototype in Figma using the design system I created for our entire department for all our different platforms and projects. \n \n After going back to my squad for some refinements, feedback, and critiques I then came up with a final testing solution that I could go test with our customers.",
-    validate:
-      "I experimented with a new way of testing our prototypes by using a platform called Useberry. Userberry is an online platform where I can upload my Figma prototypes, create questions and give some context as to what the user needs to complete. \n \n Because we have customers all across the world I thought it would be great to create this on Useberry and send out a mass link to all our external customers where they can in their own time complete the test. \n \n I received way more results than expected which was fantastic and viewed all recordings and completion rates, then compiled the results to find that the prototype was a great success. We moved this straight over to development.",
-    finalSolution:
-      "After receiving all the results we were happy to move this over into our next planned sprint where we can build this feature in different parts for MVP (minimal viable product) and get our customers to begin using it with their real-world data. \n \n We still look to continue refining and making the experience even better as we receive more feedback and suggestions from our customers. \n \n We already began investigating a customised Wizard experience tailored to the user's preference and what steps they use and don't use to make their workflows even faster for onboarding Cardholders/Users.",
-    headerImage: require("../Images/OnboardingFinalsolution.png"),
-    empathiseImage: require("../Images/CCWeb_Empathise.png"),
-    researchImage: require("../Images/CCWeb_Research.png"),
-    ideateImage: require("../Images/CCWeb_Ideate.png"),
-    prototypeImage: require("../Images/CCWeb_Prototype.png"),
-    finalSolutionImage: require("../Images/finalSolution_CCWeb.png"),
+    short_description:
+      "Designing a self-service portal to manage product licenses to its users.",
+    problem: "We released our Cardholder Management cloud service in Early Access for customers to start using for free, but needed to look at a subscription and licensing service that could enable customers to sign up and begin using our product. \n \n We took to the task at implementing a subscription and license manager to get customers either trial our new service,  and/or choose the amount of licenses they would require and enable them to assign those licenses to the desired operators of the service.",
+    understand: "I began by talking to our stakeholders and some knowledge experts and asked questions on how we might implement this license service, and what challenges they currently face with existing subscriptions and licensing services and what implications we might come across. \n \n I compiled all the information and then took my team and we began a design sprint to further uncover what we know and what knowledge gaps we still need to fill in.",
+    research: "Together with the team we set out and tried to research any other services that were similar to what we were wanting to achieve and highlighted any points of interests in terms of functionality and also the interface we might want to explore. \n \n We noted what feature we might want to adopt and also what features we want to stay clear away from.",
+    ideate: "After gathering what information and research we could get we then set out at ideating different unique ideas that followed the in scope we had set. \n \n We did a few exercises such as quick sketching, and crazy 8’s and then we all sketched a final solution that we believed would be suitable. We placed them on a bored and got everyone to target certain areas or whole ideas they thought would work and began creating a heat map of areas we would adopt in the final design.",
+    prototype: "I went away and took all the chosen ideas and features and built up a fully functioning high fidelity prototype that we could demonstrate to our stakeholder and knowledge experts and then finally validate them with customers.",
+    validate: "After making a few more tweaks based on the feedback from our stakeholders and knowledge experts we then took the final solution and tested them with our customers. \n \n With all tests coming back at 100% completion and satisfaction, we were able to pass along the final solution onto our developers to begin building. \n \n During development we ran into a few “gotcha’s” and had to iterate and refactor minor components to suit the needs.",
+    finalSolution: "",
+    coverImage: require("../Images/licenseManager/tile.png"),
+    headerImage: require("../Images/licenseManager/tile.png"),
+    empathiseImage: require("../Images/licenseManager/understand.png"),
+    researchImage: require("../Images/licenseManager/research.png"),
+    ideateImage: require("../Images/licenseManager/ideate.png"),
+    prototypeImage: require("../Images/licenseManager/prototype.png"),
+    finalSolutionImage: "",
   },
   {
     release: true,
-    projectName: "Two Factor Authenticator",
-    linkName: "/two-factor-authenticator",
+    projectName: "Two Factor Auth",
+    linkName: "/two_factor_auth",
     projectDetails: [
       "Gallagher New Zealand",
       "1 Product Manager, 3 Engineers, 2 Testers",
@@ -57,39 +50,47 @@ const projectData = [
       "I began testing my solution with internal users that would suit the targeted persona, and validate that they can find the 2FA code quickly, manage multiple 2FA codes, and also validate the additional UI changes that I made to improve the overall usability. \n \n After successfully validating my prototypes internally I moved over to our external customers and tested for the same tasks above. \n \n With all users passing my tests and given minor feedback, I could successfully conclude that the new feature and added enhancements were ready to be moved over to our developers.",
     finalSolution:
       "I began testing my solution with users & stakeholders that would suit the targeted persona, and validate that they can find the 2FA code quickly, manage multiple 2FA codes, and also validate the additional UI changes that I made to improve the overall usability. \n \n With all users passing my tests, I could successfully conclude that the new feature and added enhancements were ready to be moved over to our developers.",
-    coverImage: require("../Images/tile_image_credentials.png"),
-    headerImage: require("../Images/2FAFinal.png"),
+    coverImage: require("../Images/twoFactorAuth/tile.png"),
+    headerImage: require("../Images/twoFactorAuth/tile.png"),
     empathiseImage: require("../Images/discoverImagePlaceholder01.png"),
-    researchImage: require("../Images/Credentials_Research.png"),
-    ideateImage: require("../Images/Credentials_Ideate.png"),
-    prototypeImage: require("../Images/Credentials_Prototype.png"),
-    finalSolutionImage: require("../Images/finalSolution_Credentials.png"),
+    researchImage: require("../Images/twoFactorAuth/research.png"),
+    ideateImage: require("../Images/twoFactorAuth/ideate.png"),
+    prototypeImage: require("../Images/twoFactorAuth/prototype.png"),
+    finalSolutionImage: require("../Images/twoFactorAuth/final.png"),
   },
   {
     release: true,
-    projectName: "License Portal",
-    linkName: "/license-portal",
+    projectName: "Onboarding",
+    linkName: "/onboarding",
+    short_description:
+      "Creating a cloud security management solution for cardholder and building control.",
+
     projectDetails: [
       "Gallagher New Zealand",
-      "1 Product Manager, 3  Engineers, 2 Testers",
-      "Jan 2023 - Dec 2023",
+      "1 Product Manager, 4 Engineers, 2 Testers",
+      "Oct 2022 - Feb 2023",
     ],
-    short_description:
-      "Designing a self-service portal to manage product licenses to its users.",
-    problem: "We released our Cardholder Management cloud service in Early Access for customers to start using for free, but needed to look at a subscription and licensing service that could enable customers to sign up and begin using our product. \n \n We took to the task at implementing a subscription and license manager to get customers either trial our new service,  and/or choose the amount of licenses they would require and enable them to assign those licenses to the desired operators of the service.",
-    understand: "I began by talking to our stakeholders and some knowledge experts and asked questions on how we might implement this license service, and what challenges they currently face with existing subscriptions and licensing services and what implications we might come across. \n \n I compiled all the information and then took my team and we began a design sprint to further uncover what we know and what knowledge gaps we still need to fill in.",
-    research: "Together with the team we set out and tried to research any other services that were similar to what we were wanting to achieve and highlighted any points of interests in terms of functionality and also the interface we might want to explore. \n \n We noted what feature we might want to adopt and also what features we want to stay clear away from.",
-    ideate: "After gathering what information and research we could get we then set out at ideating different unique ideas that followed the in scope we had set. \n \n We did a few exercises such as quick sketching, and crazy 8’s and then we all sketched a final solution that we believed would be suitable. We placed them on a bored and got everyone to target certain areas or whole ideas they thought would work and began creating a heat map of areas we would adopt in the final design.",
-    prototype: "I went away and took all the chosen ideas and features and built up a fully functioning high fidelity prototype that we could demonstrate to our stakeholder and knowledge experts and then finally validate them with customers.",
-    validate: "After making a few more tweaks based on the feedback from our stakeholders and knowledge experts we then took the final solution and tested them with our customers. \n \n With all tests coming back at 100% completion and satisfaction, we were able to pass along the final solution onto our developers to begin building. \n \n During development we ran into a few “gotcha’s” and had to iterate and refactor minor components to suit the needs.",
-    finalSolution: "",
-    coverImage: require("../Images/cover_licensePortal.png"),
-    headerImage: require("../Images/LicensePortal_Header.png"),
-    empathiseImage: require("../Images/LicensePortal_Understand.png"),
-    researchImage: require("../Images/LicensePortal_Research.png"),
-    ideateImage: require("../Images/LicensePortal_Ideate.png"),
-    prototypeImage: require("../Images/LicensePortal_Prototype.png"),
-    finalSolutionImage: "",
+    problem:
+      "One of my squad's main focus was to shift a pre-existing on-premise software to an all-cloud solution while overhauling and improving all usability with new and existing customers. \n \n A large feature that we needed to overcome was an onboarding process of new Cardholder/Users to the site, this would be a new feature compared to the on-premise software but still utilising it’s existing features. \n \n I took to the task working with my squad in an agile environment to iterate on the feature to create a feasible onboarding solution.",
+    understand:
+      "We first began reaching out to our external stakeholders and looked at the existing on-premise solution for onboarding cardholders, we identified our target personas and created a journey map that reflects those business processes, we found that it had no clear built-in process for onboarding users as it was built to accommodate any type of business workflow, so every business would have its own set of workflows and could differ vastly from one another so we took the key similarities instead.  \n \n We also discovered this was a usability issue as it would also require extensive training and modules for the customers to be able to use and understand first. \n \n We knew we had to explore and create a solution that could do the same thing but still be easy and intuitive to understand and use without the training and modules.",
+    research:
+      "I then began speaking and interviewing our existing customers that use this feature on a day-to-day basis, these customers would fit our targeted persona as well so that we knew we are getting information from actual users. \n \n Because the current solution is quite all over the place we found out through our customers that a step-for-step process in onboarding a new Cardholder/User where all the necessary steps can be provided for them seemed to be a potential solution. \n \n I completed my research to look at competitors and how they achieve their solutions, as well as non-competitor research to see how other organisations do step-for-step onboarding.",
+    ideate:
+      "We proceeded together with the squad on discovering some lo-fi ideas to create a step-for-step solution for onboarding a new Cardholder/User by doing a crazy 8’s session together. \n \n We already had a form of a step-for-step process in mind before this phase but we continued to see if we can find some unique additions to the step-for-step process or even potentially a whole new solution. \n \n After the exercise, the squad voted on their most preferred design ideas and we decided collectively to proceed with a step-for-step wizard and added in some unique add ons from their designs to further enhance and improve the usability for the final solution.",
+    prototype:
+      "After we put together all the pieces in our ideation phase I then set out to create the final prototype which we could go and test with our customers/users to validate the solution. \n \n I designed a hi-fi prototype in Figma using the design system I created for our entire department for all our different platforms and projects. \n \n After going back to my squad for some refinements, feedback, and critiques I then came up with a final testing solution that I could go test with our customers.",
+    validate:
+      "I experimented with a new way of testing our prototypes by using a platform called Useberry. Userberry is an online platform where I can upload my Figma prototypes, create questions and give some context as to what the user needs to complete. \n \n Because we have customers all across the world I thought it would be great to create this on Useberry and send out a mass link to all our external customers where they can in their own time complete the test. \n \n I received way more results than expected which was fantastic and viewed all recordings and completion rates, then compiled the results to find that the prototype was a great success. We moved this straight over to development.",
+    finalSolution:
+      "After receiving all the results we were happy to move this over into our next planned sprint where we can build this feature in different parts for MVP (minimal viable product) and get our customers to begin using it with their real-world data. \n \n We still look to continue refining and making the experience even better as we receive more feedback and suggestions from our customers. \n \n We already began investigating a customised Wizard experience tailored to the user's preference and what steps they use and don't use to make their workflows even faster for onboarding Cardholders/Users.",
+    coverImage: require("../Images/onboarding/tile.png"),
+    headerImage: require("../Images/onboarding/tile.png"),
+    empathiseImage: require("../Images/onboarding/understand.png"),
+    researchImage: require("../Images/onboarding/research.png"),
+    ideateImage: require("../Images/onboarding/ideate.png"),
+    prototypeImage: require("../Images/onboarding/prototype.png"),
+    finalSolutionImage: require("../Images/onboarding/final.png"),
   },
   {
     release: true,
@@ -102,7 +103,6 @@ const projectData = [
     ],
     short_description:
       "Creating a new self service credential and access management cloud solution.",
-    coverImage: require("../Images/tile_image_arw.png"),
     problem:
       "Another squads main focus was to design and develop a full Cloud Access Management solution for credential and access control that was customer driving in user experience. \n \n One of many features, we needed to create an MVP solution for the end requesters (i.e Employees) to enable them to quickly and effectively request new credentials from their organization and could be processed by the corresponding approvers (i.e HR Admins) within the system. \n \n I took to this task working with my squad in an agile environment to iterate on this feature with our customers to create a viable solution. ",
     understand:
@@ -117,17 +117,18 @@ const projectData = [
       "We went into Wintec and organised a time to get 15 students to work through some scenarios and complete the tasks on my prototype. The students would be a targeted persona and what be a great set of users to get honest feedback from. \n \n We separated the Groups to do one task for requesting a new credential and we had the other group request a replacement credential. \n \n We had a complete 100% completion rate and got some great feedback and suggestions from the students.",
     finalSolution:
       "After finalising data we received from all the test users I made some minor adjustments to the prototype and could confidently push it over to the developers to build. \n \n We will continue refining and make any further adjustments in the future as we get more feedback from all our users.",
-    headerImage: require("../Images/RequestCredentialFinal.png"),
+    coverImage: require("../Images/credentialRequest/header.png"),
+    headerImage: require("../Images/credentialRequest/header.png"),
     empathiseImage: require("../Images/discoverImagePlaceholder02.png"),
-    researchImage: require("../Images/ARW_Research.png"),
-    ideateImage: require("../Images/ARW_Ideate.png"),
-    prototypeImage: require("../Images/ARW_Prototype.png"),
-    finalSolutionImage: require("../Images/finalSolution_ARW.png"),
+    researchImage: require("../Images/credentialRequest/research.png"),
+    ideateImage: require("../Images/credentialRequest/ideate.png"),
+    prototypeImage: require("../Images/credentialRequest/prototype.png"),
+    finalSolutionImage: require("../Images/credentialRequest/final.png"),
   },
   {
     release: false,
     projectName: "Design System",
-    linkName: "/license-portal",
+    linkName: "/design_system",
     projectDetails: [
       "Gallagher New Zealand",
       "1 Designer, 1 Engineer",
@@ -142,13 +143,13 @@ const projectData = [
     prototype: "",
     validate: "",
     finalSolution: "",
-    coverImage: require("../Images/cover_designSystem.png"),
-    headerImage: require("../Images/RequestCredentialFinal.png"),
-    empathiseImage: require("../Images/discoverImagePlaceholder02.png"),
-    researchImage: require("../Images/ARW_Research.png"),
-    ideateImage: require("../Images/ARW_Ideate.png"),
-    prototypeImage: require("../Images/ARW_Prototype.png"),
-    finalSolutionImage: require("../Images/finalSolution_ARW.png"),
+    coverImage: require("../Images/designSystem/tile.png"),
+    headerImage: "",
+    empathiseImage: "",
+    researchImage: "",
+    ideateImage: "",
+    prototypeImage: "",
+    finalSolutionImage: "",
   },
 ];
 
