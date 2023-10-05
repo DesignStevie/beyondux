@@ -1,0 +1,119 @@
+.navMainContainer{
+    background: rgba(255 255 255 / 0.80);;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.75rem 2.5rem;
+    margin-top: 3.5rem;
+    position: sticky;
+    top:0;
+    z-index: 999;
+    backdrop-filter: blur(0.5rem);
+}
+
+.navItemsContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    margin-left: auto;
+}
+
+.navItemsMobile{
+    display: none;
+    margin-left: auto;
+}
+
+.navMenuContainer{
+    width: 100%;
+    background: var(--globalWhite);
+    position: absolute;
+    height: calc(100vh - 54px);
+    top: 54px;
+    left:0;
+}
+.navMenu{
+    display: flex;
+    align-items: center;
+}
+.navMenuItems{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap:3rem;
+}
+.navMenuLinks > *{
+    color: var(--primaryGrey);
+    font-size: 1rem;
+}
+.navMenuLinks{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+}
+.navLogo{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primaryGrey)
+}
+.navLinks{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.navLinks > *{
+    color: var(--primaryGrey);
+    font-size: 1rem;
+}
+
+.active {
+    font-weight: 500;
+}
+
+.active .activeBar{
+    visibility: visible;
+}
+
+.activeBar{
+    height: 2px;
+    border-radius: 1rem;
+    background: var(--primaryGrey);
+    visibility: hidden;
+}
+/* TABLETS */
+
+@media only screen and (max-width: 770px) {
+.navMainContainer{
+    padding: 1rem 1.5rem;
+    margin-top: 0;
+}
+
+.navMenuLink{
+    font-size: 1.5rem;
+}
+
+.navItemsMobile{
+    display: block;
+}
+.navItemsContainer {
+    display: none;
+  }
+.navMenuItems{
+    display: flex;
+    flex-direction: column;
+}
+
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 480px) {
+    .navMainContainer{
+        padding: 1rem;
+    }
+    .navLogo{
+        font-size: 1rem;
+    }
+  }

@@ -1,158 +1,66 @@
-.headerBackgroundGradient {
-  height: 100vh;
-  position: absolute;
-  z-index: -10;
-  top: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  background-image: linear-gradient(
-    to right top,
-    #2e3192,
-    #0058b6,
-    #007ed4,
-    #00a3ec,
-    #1bc8ff
-  );
+.homeHeader{
+  padding: 0 0.5rem;
 }
-.headerbackgroundImage {
-  position: absolute;
-  z-index: -10;
-  top: 0;
-  left: 0;
-  max-width: 100%;
-  min-width: 1920px;
-}
-
-.headerContainer {
-  height: 100vh;
-  padding: 0rem 2rem;
-  max-width: 60rem;
-  margin: 0 auto;
-  position: relative;
+.homeHeadingText {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-/* .headerDots {
-  position: absolute;
-  right: 2rem;
-  top: 14rem;
-} */
-
-.headerGreetingContainer {
-  display: flex;
-  flex-direction: row;
   gap: 2rem;
-  align-items: center;
-}
-.logoFaceContainer {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-}
-.headingText {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  animation: onLoad 400ms;
+  animation: onLoad 800ms;
+  text-align: center;
+  margin: 6rem 0;
 }
 
 @keyframes onLoad {
-  0%   {transform: translateX(-4rem);}
-  100% {transform: translateX(0);}
+  0% {
+    transform: translateY(-2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
-.name {
-  font-size: 4rem;
-  line-height: 3.125rem;
-  color: var(--globalWhite);
+.headerContainer{
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
-.role {
-  font-size: 2.5rem;
-  font-weight: 200;
+
+.headerName {
+  font-size: var(--font-h0);
+  line-height: 3.125rem;
+  font-weight: var(--font-bold);
+  color: var(--primaryGrey);
+}
+
+.headerRole {
+  background: var(--primaryGrey);
+  font-size: var(--font-h2);
+  font-weight: var(--font-semibold);
   line-height: normal;
   color: var(--globalWhite);
 }
 
-.contactSocials {
-  display: flex;
-  gap: 1rem;
-}
-
-.contactSocials svg {
-  fill: rgba(255 255 255 / 0.75);
-  transition: transform ease 300ms;
-}
-
-.contactSocials svg:hover {
-  fill: rgba(255 255 255 / 1);
-  transform: scale(110%);
-}
-
-.scrollArrow {
-  margin-top: 4rem;
-  position: relative;
-  flex: 1;
-}
-.dotText {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  align-items: center;
-  color: var(--globalWhite);
-  font-size: 1.25rem;
-  font-weight: 200;
-}
-.verticalLine {
-  border-left: 2px solid var(--globalWhite);
-  height: calc(100% - 8.5rem);
-  position: absolute;
-  left: 0.3rem;
-  top: 0.75rem;
-}
-.arrow {
-  position: absolute;
-  bottom: 4rem;
-  left: -0.6rem;
-  transform: scale(100%);
-  cursor: pointer;
-  transition: transform ease 300ms;
-}
-.arrow:hover {
-  transform: scale(120%);
-}
-.headerContact {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  align-items: flex-end;
-  position: absolute;
-  bottom: 4.5rem;
-  right: 2rem;
-}
-.emailAddress {
-  color: var(--globalWhite);
-  font-weight: 400;
-}
-
-.header-content {
-  margin: auto 0 !important;
-}
-
-/* Last Containers */
-.lastContainer {
-  margin-bottom: 7.5rem !important;
+.headerAbout{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 45vw;
+  min-width: 35vw;
+  font-size: var(--font-body);
 }
 
 /*---------------------*/
 
- .sectionHeading .headerLine {
+.sectionHeading .headerLine {
   background-color: #fff;
 }
 
-.sectionHeading h2, .paragraphContent {
+.sectionHeading h2,
+.paragraphContent {
   color: #fff;
 }
 
@@ -171,162 +79,17 @@
   color: #2e2e2e;
 }
 
-.home-header-buttons {
-  display: flex;
-  gap: 1rem;
-}
-
-.aboutMeContainer {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  margin-top: 1rem;
-}
-
-.paragraphContent {
-  width: 60%;
-}
-
-.profileImage {
-  width: 34%;
-  position: absolute;
-  right: 0;
-  bottom: -4rem;
-}
-.paragraphContent p {
-  margin-top: 1.5rem;
-  font-size: 1rem;
-  font-weight: 300;
-}
-
-/*Contact Form*/
-.contactContainer {
-  max-width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.aboutBackgroundImage {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-}
-.aboutDots {
-  position: absolute;
-  top: 4rem;
-  right: 3rem;
-  z-index: -1;
-  transform: scale(120%);
-}
 /*---------------------*/
 
 @media only screen and (max-width: 480px) {
-  .contactContainer {
-    max-width: 100%;
+  .headerContainer{
+    gap:1.5rem
   }
-  .headerGreetingContainer {
-    flex-direction: column;
+  .homeHeadingText{
+    gap:1.5rem
   }
-  .headingText {
-    align-items: center;
-  }
-  .name {
-    font-size: 2.5rem;
-  }
-  .role {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  br {
-    display: block;
-  }
-  .verticalLine {
-    display: none;
-  }
-  .scrollArrow {
-    display: flex;
-    justify-content: center;
-  }
-  /* .dotText {
-    font-size: 1rem;
-    position: absolute;
-    bottom: 10rem;
-  } */
-  /* .dotText svg{
-    display: none;
-  } */
-  .headerDots {
-    right: 0;
-    left: 0;
-    top: -1.5rem;
-    margin: auto;
-    transform: scale(80%);
-  }
-  .arrow {
-    transform: scale(150%);
-    right: 0;
-    left: 0;
-    bottom: 6rem;
-    margin: auto;
-  }
-  .headerContact {
-    display: none;
-  }
-  .contactContainer {
-    flex-direction: column;
-  }
-  .header-background {
-    height: 100vh;
-  }
-  .header-title {
-    margin: 2rem 0rem !important;
-    font-size: 1rem;
+  .headerAbout{
+    max-width:100%;
   }
 
-  .my-work .sectionHeading {
-    padding: 0rem 1rem;
-  }
-
-  .my-work-container h2 {
-    padding-left: 1rem;
-  }
-
-  .header-container,
-  .container {
-    padding: 0 1rem;
-  }
-  .workItemButton {
-    padding-top: 2rem;
-    display: block;
-  }
-  .aboutMeContainer {
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
-  }
-  .profileImage {
-    position: relative;
-    width: 80%;
-    left: -1rem;
-  }
-  .aboutDots {
-    right: 0;
-    left: 0;
-    bottom: 14rem;
-    top: auto;
-    margin: auto;
-  }
-  .paragraphContent {
-    width: 100%;
-  }
-  .page-body {
-    width: 100%;
-    padding: 0 0.5rem;
-  }
 }

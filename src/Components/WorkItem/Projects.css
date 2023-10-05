@@ -86,12 +86,12 @@ Link {
 margin: 0 auto;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 770px) {
   .workitem-container, .comingSoonContainer {
     display: block;
     padding-bottom: 2rem;
   }
-
+  
   .workitem-container{
     box-shadow: 0 5px 24px rgba(0, 0, 0, 0.3);
   }

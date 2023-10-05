@@ -1,13 +1,38 @@
-:root{
-  --primaryPurple: #2A58AF;
-  --secondaryPurple: #E7E5FF;
-  --tertiaryPurple: #F7F6FF;
-  --pink: #BD4FFF;
-  --primaryGrey: #333;
-  --secondaryGrey: #4F4F4F;
-  --tertiaryGrey: #E0E0E0;
-  --backgroundGrey: #FAFAFA;
-  --globalWhite: #FFF;
+:root {
+
+  /* COLOURS */
+
+  --primaryGrey: #333333;
+  --secondaryGrey: #4f4f4f;
+  --tertiaryGrey: #e0e0e0;
+  --backgroundGrey: #fafafa;
+  --globalWhite: #ffffff;
+
+    /* FONTS */
+
+  --font-body: clamp(1.25rem, .25vw + 1rem, 1.5rem);
+  --font-button: clamp(0.875rem, .25vw + 1rem, 1.5rem);
+  --font-h0: clamp(3rem, .5692rem + 8.238vw, 6rem);
+  --font-h1: clamp(1.5rem, .5692rem + 2.238vw, 2.75rem);
+  --font-h1-display: clamp(2rem, 1.301rem + 2.449vw, 3.5rem);
+  --font-h2: clamp(1.5rem, 1.0982rem + 1.7143vw, 2.5rem);
+  --font-h3: clamp(1.25rem, 1.1837rem + .8163vw, 2rem);
+  --font-h4: clamp(1.25rem, 1.1837rem + .8163vw, 1.5rem);
+
+  --font-bold: 600;
+  --font-semiBold: 500;
+  --font-medium: 400;
+  --font-regular: 300;
+  --font-light: 200;
+
+  /* SPACE */
+ --space-8px: 0.5rem;
+ --space-12px: 1.5rem;
+ --space-16px:1rem;
+ --space-24px: 1.5rem;
+ --sapce-32px: 2rem;
+ --space-40px: 2.5rem;
+ --space-64px: 4rem;
 
 }
 
@@ -18,9 +43,8 @@ html {
   margin: 0;
   position: relative;
   height: 100%;
-  /* overflow-x: hidden; */
   width: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -35,10 +59,9 @@ a,
 button {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
-
+  font-family: "Poppins", sans-serif;
 }
-button{
+button {
   font-weight: 400;
   font-size: 1rem;
 }
@@ -72,17 +95,19 @@ p {
 b {
   font-weight: 600;
 }
-
-.primaryColor{
+a{
+  text-decoration: none;
+}
+.primaryColor {
   color: var(--primaryPurple) !important;
 }
 
-.primaryGreyColor{
-  color: var(--primaryGrey) !important
+.primaryGreyColor {
+  color: var(--primaryGrey) !important;
 }
 
-.disabledGreyColor{
-  color: var(--tertiaryGrey) !important
+.disabledGreyColor {
+  color: var(--tertiaryGrey) !important;
 }
 
 /* ---------- Containers ---------- */
@@ -109,18 +134,69 @@ b {
   );
 }
 
-.greyBackground{
+.greyBackground {
   margin: 0 auto;
-  background: var(--backgroundGrey)
+  background: var(--backgroundGrey);
 }
 
 /* ---------- Buttons ---------- */
 
-.roundbutton {
-  border-radius: 1rem;
-  padding: 1rem 1.5rem;
+.roundButton {
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
   border: none;
   cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.linkButton {
+  color: #007bff;
+  font-size: var(--font-button);
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  width: fit-content;
+}
+
+.linkButtonContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linkButton svg {
+  fill: #007bff;
+  margin-bottom: 0.1rem;
+}
+
+.linkButton:hover > svg{
+  animation: arrowBounce 400ms ;
+}
+
+@keyframes arrowBounce {
+  0% {
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(1rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+
+}
+.hoverBar{
+  width: 100%;
+  height: 2px;
+  border-radius: 1rem;
+  background: #007bff;
+  visibility: hidden;
+}
+
+.linkButton:hover .hoverBar{
+  visibility: visible;
 }
 
 .secondaryButton {
@@ -137,7 +213,6 @@ b {
 
 .primaryButton {
   background: var(--primaryGrey);
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
   color: var(--globalWhite);
   transform: scale(100%);
   transition: transform ease 300ms;
@@ -155,13 +230,6 @@ b {
   color: #fff;
 }
 
-.pageHeadingPurple {
-  font-weight: 600;
-  font-size: 4rem;
-  color: var(--primaryPurple);
-  margin-bottom: 4rem;
-}
-
 .pageHeadingGrey {
   font-weight: 600;
   font-size: 2.5rem;
@@ -169,7 +237,7 @@ b {
   margin: 6rem 0;
 }
 
-.pageHeadingPurpleSmall{
+.pageHeadingPurpleSmall {
   font-weight: 600;
   font-size: 2.5rem;
   line-height: 2.5rem;
@@ -177,7 +245,8 @@ b {
 }
 
 @media only screen and (max-width: 480px) {
-  .pageHeadingPurpleSmall{
-    font-size: 2rem;
+  .roundButton{
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
   }
 }

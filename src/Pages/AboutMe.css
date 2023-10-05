@@ -1,0 +1,146 @@
+.aboutIntro {
+  text-align: center;
+  font-size: var(--font-h0);
+  font-weight: var(--font-bold);
+  color: var(--primaryGrey);
+  padding: 4rem 0;
+  animation: onLoad 800ms;
+}
+.aboutContainer {
+  margin-bottom: var(--space-64px);
+  max-width: 1100px;
+  padding: 0 1rem;
+
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-64px);
+  animation-name: onLoadDelay;
+  animation-duration: 1200ms;
+}
+
+@keyframes onLoadDelay {
+  0% {
+    transform: translateY(-2rem);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(-2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* IMAGE & SOCIAL LINKS */
+
+/* IMAGE */
+
+.profileImage {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.profileImageContainer {
+  overflow: hidden;
+}
+.profileImageContainer img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* SOCIAL LINKS */
+
+.profileSocialContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.profileSocial {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-24px);
+  background: var(--primaryGrey);
+  padding: var(--space-24px);
+  align-items: center;
+}
+.socialIcon {
+  display: flex;
+  align-items: center;
+}
+.iconText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8px);
+}
+.iconTextTitle {
+  line-height: 0.625rem;
+  font-size: 0.875rem;
+  font-weight: var(--font-medium);
+  color: var(--globalWhite);
+  opacity: 0.8;
+}
+.iconTextDescription {
+  line-height: 0.6875rem;
+  font-size: 1rem;
+  font-weight: var(--font-semibold);
+  color: var(--globalWhite);
+}
+
+/* ABOUT ME TEXT */
+
+.aboutText {
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-40px);
+  line-height: 200%;
+  color: var(--primaryGrey);
+}
+
+.aboutText p {
+  font-size: var(--font-body);
+}
+
+.aboutText h1 {
+  font-size: var(--font-h1-display);
+  line-height: 110%;
+}
+
+/* TABLETS */
+
+@media only screen and (max-width: 880px) {
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .profileImage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .profileSocialContainer {
+    justify-content: space-between;
+  }
+  .profileSocial {
+    height: 100%;
+  }
+}
+/* TABLETS */
+@media only screen and (max-width: 650px) {
+  .profileImage {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 480px) {
+  .aboutText {
+    gap: 2rem;
+  }
+}
