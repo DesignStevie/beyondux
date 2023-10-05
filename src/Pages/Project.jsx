@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from "react";
+import { React, useEffect } from "react";
 import "./Project.css";
 import { useParams, Link, useLocation } from "react-router-dom";
 import Footer from "../Components/Footer/Footer";
@@ -11,9 +11,6 @@ function Project(myProjectData) {
 
   //UseLocation
   const { pathname } = useLocation();
-
-  //Other
-  const projectsCount = projectData.length - 1;
 
 
   useEffect(() => {

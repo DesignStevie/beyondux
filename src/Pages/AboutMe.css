@@ -46,12 +46,14 @@
 }
 .profileImageContainer {
   overflow: hidden;
+  border-radius: var(--radius-large);
 }
 .profileImageContainer img {
   width: 100%;
   object-fit: cover;
   display: block;
 }
+
 /* SOCIAL LINKS */
 
 .profileSocialContainer {
@@ -63,13 +65,18 @@
   display: flex;
   flex-direction: row;
   gap: var(--space-24px);
-  background: var(--primaryGrey);
+  background: #f6f6f6;
   padding: var(--space-24px);
   align-items: center;
+  border-radius: var(--radius-large);
 }
 .socialIcon {
   display: flex;
   align-items: center;
+}
+.socialIcon svg{
+  fill: var(--primaryGrey);
+  opacity: 0.4;
 }
 .iconText {
   display: flex;
@@ -79,15 +86,15 @@
 .iconTextTitle {
   line-height: 0.625rem;
   font-size: 0.875rem;
-  font-weight: var(--font-medium);
-  color: var(--globalWhite);
+  font-weight: var(--font-semibold);
+  color: var(--primaryGrey);
   opacity: 0.8;
 }
 .iconTextDescription {
   line-height: 0.6875rem;
   font-size: 1rem;
-  font-weight: var(--font-semibold);
-  color: var(--globalWhite);
+  font-weight: var(--font-bold);
+  color: var(--primaryGrey);
 }
 
 /* ABOUT ME TEXT */

@@ -1,9 +1,9 @@
 .footer {
   width: 100%;
-  background-color: #2e2e2e;
+  background-color: #f2f2f2;
 }
 
-.footer-container {
+.footerContainer {
   padding: 4rem 2rem 2rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -12,58 +12,59 @@
   display: flex;
 }
 
-.footer-container svg {
-  fill:#828282;
+.footerContactSocials{
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-40px);
 }
-.footerProjects, .footerMenu{
+
+.footerLinkContainer, .footerEmailContainer{
   display: flex;
   flex-direction: column;
+  gap: var(--space-16px);
 }
 
-.footerItem{
-  font-size: 0.875rem;
-  color: #828282;
-  font-weight: 300;
-  margin-bottom: 0.25rem;
+.footerHeading{
+  color:var(--primaryGrey);
+  font-size: 1rem;
+  font-weight: var(--font-semibold);
+  padding-bottom: var(--space-8px);
 }
 
-.footerContactSocials p {
+.footerLink{
+  font-weight: var(--font-medium);
+  text-decoration: none;
   color: #828282;
-  font-weight: 300;
+  line-height: 12px;
 }
-.footerContactSocials h4, .footerProjects h4, .footerMenu h4 {
-  margin-bottom: 1rem;
-  font-weight: 400;
-  color: #bdbdbd;
+
+.footerLink:hover{
+  color: var(--primaryGrey);
 }
-.footerEmail {
-  margin-bottom: 1rem;
+.email{
+  font-weight: var(--font-medium);
+  line-height: 12px;
+  color: #828282;
 }
-.socialIcons {
-  display: flex;
-  gap: 1rem;
+
+.email:hover{
+  color:var(--primaryGrey);
 }
-.footerLine{
-  border: none;
-  height: 1px;
-  background:#4f4f4f;
-  border-radius: 1rem;
-  width: 4rem;
-  margin-bottom: 2rem;
-}
-.footer-madeby {
+
+.footerMadeby {
   font-size: 0.75rem;
+  padding-top: var(--space-64px);
   padding-bottom: 4rem;
   text-align: center;
-  color: #bdbdbd;
-  font-weight: 300;
+  color: #828282;
+  font-weight: var(--font-medium);
 }
-.footer-madeby p{
-  font-size: 0.875rem;
+.footerMadeby p{
+  font-size: 1rem;
 }
 
 @media only screen and (max-width: 650px) {
-  .footer-container {
+  .footerContainer {
     flex-direction: column;
     gap:2rem;
     align-items: center;
@@ -71,13 +72,5 @@
   .footerLogo{
     height:50px;
     width:80px;
-  }
-  .footerMenu, .footerProjects, .footerContactSocials{
-    text-align: center;
-  }
-  .footerSocials{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 }

@@ -11,7 +11,7 @@ function ProjectItems() {
           <div className="itemContainer">
             <div className="itemTitleContainer">
               <div className="itemTitle">
-              <div className="itemNumber">0{key + 1}</div>
+                <div className="itemNumber">0{key + 1}</div>
                 <div className="title">{project.projectName}</div>
                 <div className="description">{project.short_description}</div>
                 {project.release ? (

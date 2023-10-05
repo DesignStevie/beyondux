@@ -20,24 +20,32 @@
   --font-h4: clamp(1.25rem, 1.1837rem + .8163vw, 1.5rem);
 
   --font-bold: 600;
-  --font-semiBold: 500;
+  --font-semibold: 500;
   --font-medium: 400;
   --font-regular: 300;
   --font-light: 200;
 
   /* SPACE */
+  
  --space-8px: 0.5rem;
  --space-12px: 1.5rem;
  --space-16px:1rem;
  --space-24px: 1.5rem;
- --sapce-32px: 2rem;
+ --space-32px: 2rem;
  --space-40px: 2.5rem;
  --space-64px: 4rem;
+
+   /* RADIUS */
+
+--radius-small: 0.25rem;
+--radius-medium: 0.5rem;
+--radius-large:1rem;
 
 }
 
 body,
 html {
+  overflow: auto !important;
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
@@ -150,7 +158,7 @@ a{
 }
 
 .linkButton {
-  color: #007bff;
+  color: #2997ff;
   font-size: var(--font-button);
   font-weight: 500;
   display: flex;
