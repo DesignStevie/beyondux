@@ -15,7 +15,7 @@ function Nav() {
           <NavLink
             to="/"
             className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? "active" : ""
+              isPending ? "pending" : isActive ? "active" : "navLink"
             }
           >
             Work
@@ -24,7 +24,7 @@ function Nav() {
           <NavLink
             to="/aboutme"
             className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? "active" : ""
+              isPending ? "pending" : isActive ? "active" : "navLink"
             }
           >
             About Me
