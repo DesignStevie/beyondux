@@ -3,6 +3,7 @@ import Home from "./Pages/Home";
 import Project from "./Pages/Project";
 import projectData from "./Data/ProjectData";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
+import { Analytics } from '@vercel/analytics/react';
 import AboutMe from "./Pages/AboutMe";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           element={<Project projectData={projectData} />}
         />
       </Routes>
+      <Analytics />
     </>
   );
 }
