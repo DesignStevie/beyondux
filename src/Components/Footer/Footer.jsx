@@ -68,10 +68,10 @@ function Footer() {
               Resume
             </a> */}
           </div>
-          <div className="footerEmailContainer">
+          {/* <div className="footerEmailContainer">
             <div className="footerHeading">Contact</div>
             <div className="email">Email</div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="footerMadeby">
