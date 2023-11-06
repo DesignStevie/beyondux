@@ -58,6 +58,11 @@ html {
 }
 
 /* ---------- Typography ---------- */
+ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
 h1,
 h2,
 h3,
@@ -141,7 +146,10 @@ a{
     #1bc8ff
   );
 }
-
+.whiteBackground {
+  margin: 0 auto;
+  background: var(--globalWhite);
+}
 .greyBackground {
   margin: 0 auto;
   background: var(--backgroundGrey);
@@ -228,28 +236,6 @@ a{
 
 .primaryButton:hover {
   transform: scale(105%);
-}
-
-/* ---------- Other ---------- */
-
-.pageHeadingWhite {
-  font-weight: 600;
-  font-size: 4rem;
-  color: #fff;
-}
-
-.pageHeadingGrey {
-  font-weight: 600;
-  font-size: 2.5rem;
-  color: var(--primaryGrey);
-  margin: 6rem 0;
-}
-
-.pageHeadingPurpleSmall {
-  font-weight: 600;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  color: var(--primaryPurple);
 }
 
 @media only screen and (max-width: 480px) {

@@ -41,62 +41,37 @@
 .homeButton:hover{
   transform: scale(105%);
 }
-.projectNav{
-  padding: 0.5rem;
-  border-radius: 1rem;
-  background-color: var(--primaryGrey);
-  display: flex;
-  flex-direction: column;
-}
-.navItem{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding:0.75rem;
-  border-radius: 0.5rem;
-  background-color: var(--primaryGrey);
-  cursor: pointer;
-}
-.navFocus{
-  background-color: var(--secondaryGrey);
-}
-.navItem:hover{
-  background-color: var(--secondaryGrey);
+
+.projectHeading{
+  line-height: 2.5rem;
+  text-align: center;
+  margin: 4rem 0 7.5rem 0;
+  font-size: var(--font-h0);
 }
 
 .headerImage img{
   width: 100%;
   object-fit: contain;
 }
-.projectDetailsContainer{
-  display: flex;
-  gap: 2.5rem;
-}
 
 .projectDetails{
   gap:2rem;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-width: 30%;
-  border: 1px solid var(--tertiaryGrey);
+  flex-direction: row;
+  justify-content: space-evenly;
   padding: 1.5rem;
   border-radius: 1rem;
+  color: var(--secondaryGrey)
 }
 
 .details h4{
   color: var(--primaryGrey);
   font-weight: 600;
+  margin-bottom: 1.5rem;
 }
 
 /* ---------- Project Text ---------- */
 
-.processContext{
-  white-space: pre-line;
-  display: flex;
-  flex-direction: column;
-  gap:1rem;
-}
 
 .process-header svg{
   fill: var(--primaryPurple)
@@ -109,29 +84,36 @@
 .processImage img{
   width: 100%;
   object-fit: contain;
+  vertical-align: middle;
 }
 .projectSolution {
   color: #fff;
 }
-.processContainer{
+.projectProcessContainer{
+  max-width: 700px;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
+  flex-direction: column;
+  gap:2rem;
 }
 
-.processName {
-  width:30%;
-  font-size: 1.5rem;
+.processHeader {
+  font-size: var(--font-h2);
+  margin-bottom: 2rem;
   color: var(--primaryGrey);
+}
+.processSubHeader{
+  font-size: var(--font-h3);
+  font-weight: var(--font-medium);
+  color: var(--secondaryGrey);
 }
 
 .processText {
-  width: 70%;
   white-space: pre-line;
   vertical-align: bottom;
   font-size: 1rem;
-  color: #2e2e2e;
+  color: var(--secondaryGrey);
+  line-height: 1.75rem;
 }
 .process-textSolution {
   white-space: pre-line;
@@ -181,11 +163,6 @@
   }
   .headerImage img{
     margin-bottom: 2rem;
-  }
-  .projectHeading{
-    line-height: 2.5rem;
-    margin: 4rem 0 !important;
-    font-size: 2rem;
   }
   .projectHeaderInner{
     padding: 0 1rem;

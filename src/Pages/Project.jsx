@@ -5,20 +5,18 @@ import Footer from "../Components/Footer/Footer";
 import projectData from "../Data/ProjectData";
 
 function Project(myProjectData) {
-
   //useParams
   const projectNameFromUrl = useParams().project;
 
   //UseLocation
   const { pathname } = useLocation();
 
-
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, [pathname]);
 
   const [displayProject] = projectData.filter((projectObj) => {
-    return "/" + projectNameFromUrl === projectObj.linkName;
+    return "/" + projectNameFromUrl === projectObj.cover.link;
   });
   return (
     <>
@@ -51,58 +49,94 @@ function Project(myProjectData) {
           Back
         </Link>
       </div>
-      <div className="page-container">
+      <div className="whiteBackground">
+        {/* PROJECT --- HEADER */}
+        <div className="containerPlain">
+          <h2 className="projectHeading">{displayProject.header.name}</h2>
+          <div className="projectDetailsContainer">
+            <div className="projectDetails">
+              <div className="details">
+                <h4>Company</h4>
+                <p>{displayProject.header.company}</p>
+              </div>
+              <div className="details">
+                <h4>Team</h4>
+                <ul>
+                  {displayProject.header.team.map((team, key) => {
+                    return <li>{team}</li>;
+                  })}
+                </ul>
+              </div>
+              <div className="details">
+                <h4>Assumed Roles</h4>
+                <ul>
+                  <li>Product Designer</li>
+                  <li>User Experience (UX) Designer</li>
+                  <li>User Interface (UI) Designer</li>
+                  <li>Workshop Facilitator </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="headerImage">
+            <img src={displayProject.header.showcase} alt="Final Solution" />
+          </div>
+        </div>
+        {/* PROJECT --- UNDERSTAND */}
         <div className="greyBackground">
           <div className="containerPlain">
-            {/* PROJECT --- BACKGROUND */}
-            <div className="headerImage">
-              <img src={displayProject.headerImage} alt="Final Solution" />
-            </div>
-            <h2 className="pageHeadingGrey projectHeading">
-              {displayProject.projectName}
-            </h2>
-            <div className="projectDetailsContainer">
-            <div className="projectDetails">
-                <div className="details">
-                    <h4>Company</h4>
-                  <p>{displayProject.projectDetails[0]}</p>
-                </div>
-                <div className="details">
-                    <h4>Assumed Roles</h4>
-                  <ul>
-                    <li>Product Designer</li>
-                    <li>User Experience (UX) Designer</li>
-                    <li>User Interface (UI) Designer</li>
-                    <li>Workshop Facilitator </li>
-                  </ul>
-                </div>
+            <div className="projectProcessContainer">
+              <h2 className="processHeader">Understand</h2>
+              <h3 className="processSubHeader">Context</h3>
+              <div className="processText">
+                {displayProject.understand.context}
               </div>
-              <div className="processContext">
-                  <h3 className="processName">Context</h3>
-                {displayProject.problem}
+              <h3 className="processSubHeader">Discovery</h3>
+              <div className="processText">
+                {displayProject.understand.discovery}
               </div>
+              {displayProject.understand.extra.valid && (
+                <>
+                  <h3 className="processSubHeader">
+                    {displayProject.understand.extra.heading}
+                  </h3>
+                  <div className="processText">
+                    {displayProject.understand.extra.text.map((txt, key) => {
+                      return (
+                        <>
+                          {txt.tag === "p" && <p>{txt.text}</p>}
+                          {txt.tag === "ul" && (
+                            <ul>
+                              {txt.text.flatMap((txt, key) => {
+                                return <li>{txt}</li>;
+                              })}
+                            </ul>
+                          )}
+                        </>
+                      );
+                    })}
+                  </div>
+                </>
+              )}
             </div>
           </div>
         </div>
-
-        {/* PROJECT --- UNDERSTAND */}
-        <div className="containerPlain">
-          <div className="processContainer">
-              <h3 className="processName">Understand</h3>
-              <div className="processText">{displayProject.understand}</div>
-          </div>
-        </div>
-        {displayProject.empathiseImage && (
+        {displayProject.understand.showcase && (
           <div className="processImage">
-            <img src={displayProject.empathiseImage} alt="Final Solution" />
+            <img
+              src={displayProject.understand.showcase}
+              alt="Final Solution"
+            />
           </div>
         )}
 
         {/* PROJECT --- RESEARCH */}
-        <div className="containerPlain">
-          <div className="processContainer">
-              <h3 className="processName">Research</h3>
+        <div className="greyBackground">
+          <div className="containerPlain">
+            <div className="projectProcessContainer">
+              <h3 className="processHeader">Research</h3>
               <div className="processText">{displayProject.research}</div>
+            </div>
           </div>
         </div>
         {displayProject.researchImage && (
@@ -110,12 +144,13 @@ function Project(myProjectData) {
             <img src={displayProject.researchImage} alt="Final Solution" />
           </div>
         )}
-
         {/* PROJECT --- IDEATE */}
-        <div className="containerPlain">
-          <div className="processContainer">
-              <h3 className="processName">Ideate</h3>
+        <div className="greyBackground">
+          <div className="containerPlain">
+            <div className="projectProcessContainer">
+              <h3 className="processHeader">Ideate</h3>
               <div className="processText">{displayProject.ideate}</div>
+            </div>
           </div>
         </div>
         {displayProject.ideateImage && (
@@ -123,34 +158,36 @@ function Project(myProjectData) {
             <img src={displayProject.ideateImage} alt="Final Solution" />
           </div>
         )}
-
-        {/* PROJECT --- PROTOTYPE */}
-        <div className="containerPlain">
-          <div className="processContainer">
-              <h3 className="processName">Prototype</h3>
-              <div className="processText">{displayProject.prototype}</div>
-          </div>
-        </div>
-        {displayProject.prototypeImage && (
-          <div className="processImage">
-            <img src={displayProject.prototypeImage} alt="Final Solution" />
-          </div>
-        )}
-
         {/* PROJECT --- VALIDATE */}
-        <div className="containerPlain">
-          <div className="processContainer">
-              <h3 className="processName">Validate</h3>
-              <div className="processText">{displayProject.validate}</div>
+        <div className="greyBackground">
+          <div className="containerPlain">
+            <div className="projectProcessContainer">
+              <h2 className="processHeader">Validate</h2>
+              <h3 className="processSubHeader">Prototyping</h3>
+              <div className="processText">
+                {displayProject.validate.prototyping}
+              </div>
+              <h3 className="processSubHeader">User Testing</h3>
+              <div className="processText">
+                {displayProject.validate.testing}
+              </div>
+            </div>
           </div>
-        </div>
 
-        {/* PROJECT --- FINAL SOLUTION */}
-        <div className="process-image">
-          {displayProject.finalSolutionImage !== "" && <img
-            src={displayProject.finalSolutionImage}
-            alt="Final_solution_image"
-          /> }
+          {displayProject.validate.showcase && (
+            <div className="processImage">
+              <img src={displayProject.validate.showcase} alt="Final Solution" />
+            </div>
+          )}
+          {/* PROJECT --- FINAL SOLUTION */}
+          {displayProject.finalSolutionImage && (
+            <div className="processImage">
+              <img
+                src={displayProject.finalSolutionImage}
+                alt="Final Solution"
+              />
+            </div>
+          )}
         </div>
       </div>
       <Footer />
