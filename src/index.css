@@ -159,14 +159,54 @@ a{
 
 .roundButton {
   border-radius: 0.5rem;
-  padding: 0.75rem 1rem;
   border: none;
   cursor: pointer;
-  font-size: 0.875rem;
+  font-size: 1rem;
+  font-weight: var(--font-regular);
 }
 
+.buttonPrimaryIcon{
+  background: #0a89ff;
+  color: var(--globalWhite);
+  transform: scale(100%);
+  padding: 0.75rem 0.5rem 0.75rem 1.25rem;
+  transition: transform ease 300ms;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:.5rem;
+}
+
+.buttonPrimaryIcon svg{
+  display: flex;
+  align-items: center;
+  transition: padding ease-in 100ms;
+}
+
+@keyframes arrowBounceButton {
+  0% {
+    padding-left: 0;
+  }
+  50%{
+    padding-left: 0.5rem;
+  }
+  100% {
+    padding-left: 0;
+  }
+}
+
+.buttonPrimaryIcon:hover > svg{
+  animation: arrowBounceButton 800ms;
+}
+
+.buttonPrimaryIcon:hover {
+  transform: scale(108%);
+}
+
+
+
 .linkButton {
-  color: #2997ff;
+  color: #0a89ff;
   font-size: var(--font-button);
   font-weight: 500;
   display: flex;
@@ -184,7 +224,6 @@ a{
 
 .linkButton svg {
   fill: #2997ff;
-  margin-bottom: 0.1rem;
 }
 
 .linkButton:hover > svg{
@@ -228,7 +267,7 @@ a{
 }
 
 .primaryButton {
-  background: var(--primaryGrey);
+  background: #178EFF;
   color: var(--globalWhite);
   transform: scale(100%);
   transition: transform ease 300ms;

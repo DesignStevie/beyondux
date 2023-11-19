@@ -1,5 +1,15 @@
 .homeHeader{
   padding: 0 0.5rem;
+  position: relative;
+}
+.homeBG{
+  overflow:hidden;
+  position: relative;
+}
+.homeBG img{
+  position: fixed;
+  top:0;
+  z-index: -99;
 }
 .homeHeadingText {
   display: flex;
@@ -7,7 +17,7 @@
   gap: 2rem;
   animation: onLoad 800ms;
   text-align: center;
-  margin: 6rem 0;
+  margin: 6rem 0 10rem 0;
 }
 
 @keyframes onLoad {
@@ -38,18 +48,16 @@
 }
 
 .headerRole {
-  background: var(--primaryGrey);
   font-size: var(--font-h2);
   font-weight: var(--font-semibold);
   line-height: normal;
-  color: var(--globalWhite);
+  color: var(--primaryGrey);
 }
 
 .headerAbout{
   margin-left: auto;
   margin-right: auto;
-  max-width: 45vw;
-  min-width: 35vw;
+  max-width: 45rem;
   font-size: var(--font-body);
 }
 
