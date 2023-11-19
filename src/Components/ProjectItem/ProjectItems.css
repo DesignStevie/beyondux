@@ -4,7 +4,7 @@
   position: relative;
 }
 .itemContainerConstraint {
-  max-width: 1800px;
+  width: 80vw;
   margin: 0 auto;
   gap: 2rem;
   display: flex;
@@ -177,6 +177,7 @@
     flex-direction: column;
     gap: var(--space-16px);
     align-items: normal;
+    width: 100vw;
   }
   .itemTitleContainer {
     height: auto;
@@ -204,10 +205,12 @@
   }
   .titleBlack {
     padding-left: 0;
+    padding-right: 0;
     border-left: none;
     order: 1;
   }
   .titleWhite {
+    padding-left: 0;
     padding-right: 0;
     border-right: none;
   }
@@ -219,6 +222,9 @@
 /* MOBILES */
 
 @media only screen and (max-width: 500px) {
+  .itemContainerConstraint {
+    margin: 0;
+  }
   .itemImageContainer {
     padding: 1rem;
   }
