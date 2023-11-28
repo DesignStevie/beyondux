@@ -1,46 +1,44 @@
 :root {
-
   /* COLOURS */
 
-  --primaryGrey: #333333;
+  --primaryGrey: #323232;
   --secondaryGrey: #4f4f4f;
   --tertiaryGrey: #e0e0e0;
   --backgroundGrey: #fafafa;
   --globalWhite: #ffffff;
 
-    /* FONTS */
+  /* FONTS */
 
-  --font-body: clamp(1.25rem, .25vw + 1rem, 1.5rem);
-  --font-button: clamp(0.875rem, .25vw + 1rem, 1.5rem);
-  --font-h0: clamp(3rem, .5692rem + 8.238vw, 6rem);
-  --font-h1: clamp(1.5rem, .5692rem + 2.238vw, 2.75rem);
+  --font-body: clamp(1.25rem, 0.25vw + 1rem, 1.5rem);
+  --font-button: clamp(0.875rem, 0.25vw + 1rem, 1.5rem);
+  --font-h0: clamp(3rem, 0.5692rem + 8.238vw, 4rem);
+  --font-h1: clamp(1.5rem, 0.5692rem + 2.238vw, 2.75rem);
   --font-h1-display: clamp(2rem, 1.301rem + 2.449vw, 3.5rem);
   --font-h2: clamp(1.5rem, 1.0982rem + 1.7143vw, 2.5rem);
-  --font-h3: clamp(1.25rem, 1.1837rem + .8163vw, 2rem);
-  --font-h4: clamp(1.25rem, 1.1837rem + .8163vw, 1.5rem);
+  --font-h3: clamp(1.25rem, 1.1837rem + 0.8163vw, 2rem);
+  --font-h4: clamp(1.25rem, 1.1837rem + 0.8163vw, 1.5rem);
 
   --font-bold: 600;
   --font-semibold: 500;
   --font-medium: 400;
-  --font-regular: 300;
+  --font-regular: 400;
   --font-light: 200;
 
   /* SPACE */
-  
- --space-8px: 0.5rem;
- --space-12px: 1.5rem;
- --space-16px:1rem;
- --space-24px: 1.5rem;
- --space-32px: 2rem;
- --space-40px: 2.5rem;
- --space-64px: 4rem;
 
-   /* RADIUS */
+  --space-8px: 0.5rem;
+  --space-12px: 1.5rem;
+  --space-16px: 1rem;
+  --space-24px: 1.5rem;
+  --space-32px: 2rem;
+  --space-40px: 2.5rem;
+  --space-64px: 4rem;
 
---radius-small: 0.25rem;
---radius-medium: 0.5rem;
---radius-large:1rem;
+  /* RADIUS */
 
+  --radius-small: 0.25rem;
+  --radius-medium: 0.5rem;
+  --radius-large: 1rem;
 }
 
 body,
@@ -108,7 +106,7 @@ p {
 b {
   font-weight: 600;
 }
-a{
+a {
   text-decoration: none;
 }
 .primaryColor {
@@ -124,10 +122,15 @@ a{
 }
 
 /* ---------- Containers ---------- */
-
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+  grid-auto-rows: max-content;
+}
 .containerPlain {
   padding: 4rem 1rem;
-  max-width: 60rem;
+  max-width: 45rem;
   margin: 0 auto;
   position: relative;
 }
@@ -165,7 +168,7 @@ a{
   font-weight: var(--font-regular);
 }
 
-.buttonPrimaryIcon{
+.buttonPrimaryIcon {
   background: #0a89ff;
   color: var(--globalWhite);
   transform: scale(100%);
@@ -174,10 +177,10 @@ a{
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap:.5rem;
+  gap: 0.5rem;
 }
 
-.buttonPrimaryIcon svg{
+.buttonPrimaryIcon svg {
   display: flex;
   align-items: center;
   transition: padding ease-in 100ms;
@@ -187,7 +190,7 @@ a{
   0% {
     padding-left: 0;
   }
-  50%{
+  50% {
     padding-left: 0.5rem;
   }
   100% {
@@ -195,15 +198,13 @@ a{
   }
 }
 
-.buttonPrimaryIcon:hover > svg{
+.buttonPrimaryIcon:hover > svg {
   animation: arrowBounceButton 800ms;
 }
 
 .buttonPrimaryIcon:hover {
   transform: scale(108%);
 }
-
-
 
 .linkButton {
   color: #0a89ff;
@@ -216,7 +217,7 @@ a{
   width: fit-content;
 }
 
-.linkButtonContainer{
+.linkButtonContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -226,23 +227,22 @@ a{
   fill: #2997ff;
 }
 
-.linkButton:hover > svg{
-  animation: arrowBounce 400ms ;
+.linkButton:hover > svg {
+  animation: arrowBounce 400ms;
 }
 
 @keyframes arrowBounce {
   0% {
     transform: translateX(0);
   }
-  50%{
+  50% {
     transform: translateX(1rem);
   }
   100% {
     transform: translateX(0);
   }
-
 }
-.hoverBar{
+.hoverBar {
   width: 100%;
   height: 2px;
   border-radius: 1rem;
@@ -250,7 +250,7 @@ a{
   visibility: hidden;
 }
 
-.linkButton:hover .hoverBar{
+.linkButton:hover .hoverBar {
   visibility: visible;
 }
 
@@ -267,7 +267,7 @@ a{
 }
 
 .primaryButton {
-  background: #178EFF;
+  background: #178eff;
   color: var(--globalWhite);
   transform: scale(100%);
   transition: transform ease 300ms;
@@ -277,8 +277,15 @@ a{
   transform: scale(105%);
 }
 
+img {
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+}
 @media only screen and (max-width: 480px) {
-  .roundButton{
+  .roundButton {
     font-size: 1rem;
     padding: 1rem 1.5rem;
   }

@@ -3,7 +3,6 @@ import Footer from "../Components/Footer/Footer";
 import "./Home.css";
 import ProjectItems from "../Components/ProjectItem/ProjectItems";
 import Nav from "../Components/Nav/Nav";
-import homeBG from "../Images/homeBG.png";
 
 function Home() {
   return (
@@ -14,17 +13,19 @@ function Home() {
 
       {/* HOME --- HEADER*/}
       <div className="homeBG">
-        <img src={homeBG} />
         <div className="homeHeader">
-          <div className="homeHeadingText">
-            <div className="headerContainer">
-              <div className="headerName">Hey, I'm Steven.</div>
-              <div className="headerRole">I'm a UX/UI Designer.</div>
+          <div className="headerContainer">
+            <div className="headerName">Hello, I'm Steven.</div>
+            <div className="headerRole">
+              I’m a passionate UX/UI Designer who loves to craft beautiful yet
+              meaningful experiences.
             </div>
-            <div className="headerAbout">
-              I'm passionate about crafting beautiful experiences that are
-              engaging, intuitive, and user-centric.
-            </div>
+          </div>
+          <hr className="line" />
+          <div className="headerAbout">
+            With over two years in the industry designing new products and
+            improving existing ones by crafting stunning experiences that are
+            engaging, intuitive , and user-centric.
           </div>
         </div>
       </div>

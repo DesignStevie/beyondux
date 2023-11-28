@@ -103,18 +103,18 @@
   margin-bottom: auto;
   display: flex;
   flex-direction: column;
-  gap: var(--space-40px);
-  line-height: 200%;
+  gap: var(--space-24px);
   color: var(--primaryGrey);
 }
 
-.aboutText p {
-  font-size: var(--font-body);
+.paragraph{
+  font-size: 1rem;
+  color: var(--secondaryGrey)
 }
 
-.aboutText h1 {
-  font-size: var(--font-h1-display);
-  line-height: 110%;
+.aboutText h2 {
+  font-size: var(--font-h4);
+  line-height: 120%;
 }
 
 /* TABLETS */

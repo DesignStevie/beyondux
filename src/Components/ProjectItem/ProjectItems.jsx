@@ -25,7 +25,7 @@ function ProjectItems() {
               >
                 <div className="itemTitle">
                   <div className="itemNumber">0{key + 1}</div>
-                  <div className="title">{project.header.name}</div>
+                  <div className="title">{project.cover.name}</div>
                   <div className="description">{project.cover.description}</div>
                   {project.release ? (
                     <Link
@@ -80,12 +80,6 @@ function ProjectItems() {
                     alt="Project"
                   />
                 </Link>
-                {/* <img className="interface" src={project.interfaceImage} alt="Project" /> */}
-                <div className="rotateContainer">
-                  <div className="projectNamePortrait">
-                    {project.header.name.toUpperCase()}
-                  </div>
-                </div>
               </div>
             </div>
           </div>

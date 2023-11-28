@@ -1,23 +1,14 @@
-.homeHeader{
-  padding: 0 0.5rem;
+.homeHeader {
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 6rem 0 10rem 0;
   position: relative;
-}
-.homeBG{
-  overflow:hidden;
-  position: relative;
-}
-.homeBG img{
-  position: fixed;
-  top:0;
-  z-index: -99;
-}
-.homeHeadingText {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
   animation: onLoad 800ms;
-  text-align: center;
-  margin: 6rem 0 10rem 0;
+}
+.homeBG {
+  overflow: hidden;
+  position: relative;
+  background-color: var(--backgroundGrey);
 }
 
 @keyframes onLoad {
@@ -31,13 +22,11 @@
   }
 }
 
-.headerContainer{
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
+.headerContainer {
+  max-width: 40rem;
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: var(--space-40px);
 }
 
 .headerName {
@@ -48,17 +37,18 @@
 }
 
 .headerRole {
-  font-size: var(--font-h2);
-  font-weight: var(--font-semibold);
+  font-size: var(--font-h4);
+  font-weight: var(--font-regular);
   line-height: normal;
   color: var(--primaryGrey);
 }
-
-.headerAbout{
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 45rem;
-  font-size: var(--font-body);
+.line {
+  border-top: 1px solid #ccc;
+  margin: 2.5rem 0;
+}
+.headerAbout {
+  max-width: 40rem;
+  font-size: 1rem;
 }
 
 /*---------------------*/
@@ -90,14 +80,13 @@
 /*---------------------*/
 
 @media only screen and (max-width: 480px) {
-  .headerContainer{
-    gap:1.5rem
+  .headerContainer {
+    gap: 1.5rem;
   }
-  .homeHeadingText{
-    gap:1.5rem
+  .homeHeadingText {
+    gap: 1.5rem;
   }
-  .headerAbout{
-    max-width:100%;
+  .headerAbout {
+    max-width: 100%;
   }
-
 }

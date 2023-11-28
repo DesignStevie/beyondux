@@ -7,7 +7,12 @@ function Nav() {
 
   return (
     <div className="navMainContainer">
-      <NavLink to="/" className="navLogo">
+      <NavLink
+        to="/"
+        className={({ isActive, isPending }) =>
+          isPending ? "navLogo" : isActive ? "navLogo" : "navLogo"
+        }
+      >
         Steven Odendaal
       </NavLink>
       <div className="navItemsContainer">
@@ -72,14 +77,14 @@ function Nav() {
               <path
                 d="M1 1H25"
                 stroke="#333333"
-                stroke-width="2"
-                stroke-linecap="round"
+                strokeWidth="2"
+                strokeLinecap="round"
               />
               <path
                 d="M1 9H25"
                 stroke="#333333"
-                stroke-width="2"
-                stroke-linecap="round"
+                strokeWidth="2"
+                strokeLinecap="round"
               />
             </svg>
           </div>
@@ -101,14 +106,14 @@ function Nav() {
               <path
                 d="M1.51465 18.4844L18.4852 1.51381"
                 stroke="#333333"
-                stroke-width="2"
-                stroke-linecap="round"
+                strokeWidth="2"
+                strokeLinecap="round"
               />
               <path
                 d="M1.51465 1.51562L18.4852 18.4862"
                 stroke="#333333"
-                stroke-width="2"
-                stroke-linecap="round"
+                strokeWidth="2"
+                strokeLinecap="round"
               />
             </svg>
           </div>
