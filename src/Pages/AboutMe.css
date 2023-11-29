@@ -16,11 +16,11 @@
   margin-right: auto;
   grid-template-columns: 1fr 2fr;
   gap: var(--space-64px);
-  animation-name: onLoadDelay;
+  animation-name: onLoadDelay02;
   animation-duration: 1200ms;
 }
 
-@keyframes onLoadDelay {
+@keyframes onLoadDelay02 {
   0% {
     transform: translateY(-2rem);
     opacity: 0;

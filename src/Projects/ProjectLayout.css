@@ -19,8 +19,30 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  animation: onLoad 800ms;
+  animation-name: onLoadDelay02;
+  animation-duration: 1200ms;
 }
+
+@keyframes onLoadDelay03 {
+  0% {
+    transform: translateY(-2rem);
+    opacity: 0;
+  }
+  40% {
+    transform: translateY(-2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.headerImage{
+  animation-name: onLoadDelay03;
+  animation-duration: 1500ms;
+}
+
 .company,
 .team,
 .roles {

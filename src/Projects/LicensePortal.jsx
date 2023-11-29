@@ -40,7 +40,7 @@ function LicensePortal() {
             </div>
           </div>
         </div>
-        <div className="chapterImage">
+        <div className="chapterImage headerImage">
           <img src={HeaderImage} alt="chapter" />
         </div>
       </div>
