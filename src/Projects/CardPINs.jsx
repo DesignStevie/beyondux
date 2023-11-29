@@ -114,6 +114,83 @@ function CardPINs() {
               </div>
             </div>
           </div>
+          <div className="text">
+            <strong>User Problems</strong>
+          </div>
+          <div className="list">
+            <div className="listItem">
+              <div className="bullet">
+                <svg
+                  width="10"
+                  height="11"
+                  viewBox="0 0 10 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="5"
+                    width="8"
+                    height="8"
+                    rx="2"
+                    transform="rotate(45 5 0)"
+                    fill="#232323"
+                  />
+                </svg>
+              </div>
+              <div>
+                Operators need to assign, edit, and view PIN’s within Command
+                Centre Web.
+              </div>
+            </div>
+            <div className="listItem">
+              <div className="bullet">
+                <svg
+                  width="10"
+                  height="11"
+                  viewBox="0 0 10 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="5"
+                    width="8"
+                    height="8"
+                    rx="2"
+                    transform="rotate(45 5 0)"
+                    fill="#232323"
+                  />
+                </svg>
+              </div>
+              <div>
+                Operators dont know the differences between User Codes and Card
+                PIN’s.
+              </div>
+            </div>
+            <div className="listItem">
+              <div className="bullet">
+                <svg
+                  width="10"
+                  height="11"
+                  viewBox="0 0 10 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="5"
+                    width="8"
+                    height="8"
+                    rx="2"
+                    transform="rotate(45 5 0)"
+                    fill="#232323"
+                  />
+                </svg>
+              </div>
+              <div>
+                Cardholders forget their Card PIN’s frequently, causing unwanted
+                strain on Operators to manually reassign new ones.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="chapterImage">

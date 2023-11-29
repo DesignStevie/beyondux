@@ -248,7 +248,7 @@ function LicensePortal() {
             we could demonstrate to our stakeholder and knowledge experts and
             then finally validate them with customers.
           </div>
-          <h3 className="subHeader">Prototyping</h3>
+          <h3 className="subHeader">User Testing</h3>
           <div className="text">
             With all tests coming back at 100% completion and satisfaction, we
             were able to pass along the final solution onto our developers to
@@ -260,10 +260,10 @@ function LicensePortal() {
           </div>
         </div>
       </div>
-      <div className="chapterImage">
+      <div className="chapterImage imageDropshadow">
         <img src={lofiDesign} alt="chapter" />
       </div>
-      <div className="chapterImage imageSpacing">
+      <div className="chapterImage imageSpacing imageDropshadow">
         <img src={finalImage} alt="chapter" />
       </div>
       <Footer />

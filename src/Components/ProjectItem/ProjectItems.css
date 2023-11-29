@@ -75,7 +75,6 @@
 
 .titleWhite {
   padding-right: 4rem;
-  padding-left: var(--space-40px);
   border-right: 1px solid #4f4f4f;
   order: 1;
 }
@@ -99,7 +98,6 @@
 
 .titleBlack {
   padding-left: 4rem;
-  padding-right: var(--space-40px);
   border-left: 1px solid #cccccc;
   order: 2;
 }

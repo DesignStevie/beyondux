@@ -9,6 +9,7 @@
   line-height: 34px;
   text-align: left;
   padding-bottom: 2rem;
+  animation: onLoad 800ms;
 }
 
 .projectDescription {
@@ -18,6 +19,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  animation: onLoad 800ms;
 }
 .company,
 .team,
