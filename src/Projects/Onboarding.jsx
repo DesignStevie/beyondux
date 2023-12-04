@@ -9,6 +9,7 @@ import finalImage from "../Images/onboarding/final.png";
 // import Walkthrough from "../Images/onboarding/walkthrough.mp4";
 import "./ProjectLayout.css";
 import BackButton from "../Components/BackButton/BackButton";
+import ViewMore from "../Components/ViewMore/ViewMore";
 
 function Onboarding() {
   return (
@@ -261,6 +262,11 @@ function Onboarding() {
       <div className="chapterImage imageSpacing">
         <img src={finalImage} alt="chapter" />
       </div>
+      <div className="viewMore">
+        <hr className="line" />
+        <h2>More Projects</h2>
+      </div>
+      <ViewMore project="/onboarding" />
       <Footer />
     </>
   );

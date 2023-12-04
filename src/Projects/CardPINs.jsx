@@ -8,6 +8,7 @@ import LofiDesign from "../Images/cardPINs/lofidesign.png";
 import Walkthrough from "../Images/cardPINs/walkthrough.mp4";
 import "./ProjectLayout.css";
 import BackButton from "../Components/BackButton/BackButton";
+import ViewMore from "../Components/ViewMore/ViewMore";
 
 function CardPINs() {
   return (
@@ -242,8 +243,13 @@ function CardPINs() {
         <img src={LofiDesign} alt="chapter" />
       </div>
       <div className="chapterImage imageWhiteBorder imageDropshadow imageSpacing">
-        <video className="walkthrough" src={Walkthrough} autoPlay loop muted />
+        <video className="walkthrough" src={Walkthrough} playsInline autoPlay loop muted preload="auto" />
       </div>
+      <div className="viewMore">
+        <hr className="line" />
+        <h2>More Projects</h2>
+      </div>
+      <ViewMore project="/card-PINs" />
       <Footer />
     </>
   );

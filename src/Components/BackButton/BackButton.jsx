@@ -34,7 +34,7 @@ function BackButton() {
             />
           </g>
         </svg>
-        Back
+        Home
       </button>
     </>
   );

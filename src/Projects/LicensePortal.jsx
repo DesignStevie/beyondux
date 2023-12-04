@@ -7,6 +7,7 @@ import lofiDesign from "../Images/licenseManager/lofiDesign.png";
 import finalImage from "../Images/licenseManager/final.png";
 import "./ProjectLayout.css";
 import BackButton from "../Components/BackButton/BackButton";
+import ViewMore from "../Components/ViewMore/ViewMore";
 
 function LicensePortal() {
   return (
@@ -266,9 +267,14 @@ function LicensePortal() {
       <div className="chapterImage imageSpacing imageDropshadow">
         <img src={finalImage} alt="chapter" />
       </div>
+      <div className="viewMore">
+        <hr className="line" />
+        <h2>More Projects</h2>
+      </div>
+      <ViewMore project="/license-portal" />
       <Footer />
     </>
   );
 }
 
-export default LicensePortal;
+export default LicensePortal; 

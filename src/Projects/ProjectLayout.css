@@ -141,7 +141,7 @@
   margin: 4rem auto !important;
 }
 .chapterImage {
-  width: 60rem;
+  max-width: 60rem;
   margin: 0 auto;
   overflow-x: hidden;
 }
@@ -151,6 +151,7 @@
   object-fit: contain;
   vertical-align: middle;
 }
+
 video {
   width: 100%;
   vertical-align: middle;
@@ -158,6 +159,13 @@ video {
 
 .walkthrough {
   object-fit: contain;
+}
+.viewMore{
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+  padding: 0 1rem;
 }
 
 @media only screen and (max-width: 920px) {

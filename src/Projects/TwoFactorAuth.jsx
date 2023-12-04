@@ -7,6 +7,7 @@ import LofiDesign from "../Images/twoFactorAuth/prototype.png";
 import finalImage from "../Images/twoFactorAuth/header.png";
 import "./ProjectLayout.css";
 import BackButton from "../Components/BackButton/BackButton";
+import ViewMore from "../Components/ViewMore/ViewMore";
 
 function TwoFactorAuth() {
   return (
@@ -212,6 +213,11 @@ function TwoFactorAuth() {
       <div className="chapterImage imageSpacing">
         <img src={finalImage} alt="chapter" />
       </div>
+      <div className="viewMore">
+        <hr className="line"/>
+        <h2>More Projects</h2>
+      </div>
+      <ViewMore project="/two-factor-auth" />
       <Footer />
     </>
   );
