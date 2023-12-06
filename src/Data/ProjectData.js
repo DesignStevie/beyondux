@@ -55,7 +55,7 @@ const projectData = [
 
   // ------------------ Design System ------------------ //
   {
-    release: false,
+    release: true,
 
     //Project Cover
     cover: {

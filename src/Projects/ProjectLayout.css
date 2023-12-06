@@ -199,6 +199,9 @@ video {
     flex-direction: column;
     gap: 2rem;
   }
+  .imageWhiteBorder{
+    border-radius: 0.5rem;
+  }
 }
 
 /* MOBILE */
