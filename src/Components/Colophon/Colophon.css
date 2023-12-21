@@ -1,0 +1,58 @@
+.colophonRoot{
+    position: relative;
+}
+.colophonContainer{
+    position: absolute;
+    width: 420px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 3rem;
+    display: flex;
+    gap:1.5rem;
+    text-align: left;
+    flex-direction: row;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: rgba(0 0 0 / 0.4);
+    backdrop-filter: blur(0.5rem);
+    box-shadow: 0px 16px 40px 0px rgba(0, 0, 0, 0.4);
+}
+.colophonCol{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+.colItem{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap:1rem;
+}
+.colophonItemIcon, .colophonItemFigma{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.25rem;
+}
+.colophonItemIcon svg{
+    fill: #ccc;
+}
+.colophonItemFigma svg{
+    stroke: #ccc
+}
+.colophonButton{
+    padding: 0.25rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #323232;
+    cursor: pointer;
+}
+.colophonButton:hover{
+    /* color: #f8f8f8; */
+    background-color: #323232;
+}
+@media only screen and (max-width: 480px) {
+    .colophonContainer{
+        width:200px;
+        flex-direction: column;
+    }
+}

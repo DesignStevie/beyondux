@@ -182,7 +182,7 @@
   .itemTitle {
     position: relative;
     gap: 1rem;
-    padding: var(--space-40px) var(--space-40px) 0 var(--space-40px);
+    padding: var(--space-40px) var(--space-24px) 0 var(--space-24px);
     transform: translate(0, 0);
   }
   .title {

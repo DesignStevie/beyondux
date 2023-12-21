@@ -50,7 +50,11 @@
   fill:#a9a9a9
 }
 .footerMadeby {
-  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:0.5rem;
+  font-size: 1rem;
   padding-top: var(--space-64px);
   padding-bottom: 4rem;
   text-align: center;
@@ -62,6 +66,7 @@
 }
 
 @media only screen and (max-width: 650px) {
+
   .footerContainer {
     flex-direction: column;
     gap:2rem;
@@ -70,5 +75,12 @@
   .footerLogo{
     height:50px;
     width:80px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .footerMadeby{
+    flex-direction: column;
+    gap:0.25rem
   }
 }

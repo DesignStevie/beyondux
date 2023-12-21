@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import Colophon from "../Colophon/Colophon";
 
 function Footer() {
   return (
@@ -58,7 +59,7 @@ function Footer() {
         </div>
       </div>
       <div className="footerMadeby">
-        <p>© 2023 Steven Odendaal</p>
+        © 2023 Steven Odendaal<div>•</div><Colophon />
       </div>
     </div>
   );
