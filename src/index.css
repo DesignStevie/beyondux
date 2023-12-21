@@ -180,7 +180,19 @@ a {
   font-size: 1rem;
   font-weight: var(--font-regular);
 }
-
+.buttonSecondary{
+  border: 1.5px solid #0a89ff;
+  background-color: transparent;
+  padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+  color: #0a89ff;
+  width: auto;
+  transition: all ease-in 300ms;
+  width: fit-content;
+}
+.buttonSecondary:hover{
+  background-color: rgba(10 137 255 / 0.15);
+  transform: scale(108%);
+}
 .buttonPrimaryIcon {
   background: #0a89ff;
   color: var(--globalWhite);

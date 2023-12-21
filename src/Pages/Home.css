@@ -1,14 +1,45 @@
-.homeHeader {
-  max-width: 80vw;
-  margin: 0 auto;
-  padding: 6rem 0 10rem 0;
-  position: relative;
-  animation: onLoad 800ms;
-}
 .homeBG {
   overflow: hidden;
+  background-color: #000
+}
+
+.homeContainer{
+  width: fit-content;
+  min-width: 80vw;
+  max-height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
   position: relative;
-  background-color: var(--backgroundGrey);
+}
+.homeHeader {
+  padding: 0 1.5rem;
+  z-index: 99;
+  position: absolute;
+  left: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  animation: onLoad 800ms;
+}
+
+.headerContainer {
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-24px);
+}
+
+.imageContainer{
+  max-width:50%;
+  margin-left: auto;
+}
+.homeImage{
+  object-fit: fit;
+  margin-bottom: 4rem;
+}
+.homeImage img{
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes onLoad {
@@ -22,33 +53,42 @@
   }
 }
 
-.headerContainer {
-  max-width: 40rem;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-40px);
+@keyframes onLoadLine {
+  0% {
+    width:0;
+    opacity: 0;
+  }
+  100% {
+    width:225px;
+    opacity: 1;
+  }
 }
 
+.headerHello{
+  line-height: 1.5rem;
+  font-size: var(--font-h2);
+  font-weight: var(--font-regular);
+  color: var(--secondaryGrey);
+}
 .headerName {
+  width: 100%;
   font-size: var(--font-h0);
   line-height: 3.125rem;
   font-weight: var(--font-bold);
-  color: var(--primaryGrey);
+  color: var(--globalWhite);
 }
 
-.headerRole {
-  font-size: var(--font-h4);
-  font-weight: var(--font-regular);
-  line-height: normal;
-  color: var(--primaryGrey);
-}
 .line {
+  width:225px;
   border-top: 1px solid #ccc;
-  margin: 2.5rem 0;
+  margin: 0;
+  animation: onLoadLine 800ms;
 }
 .headerAbout {
   max-width: 40rem;
-  font-size: 1rem;
+  font-size: var(--font-body);
+  font-weight: var(--font-light);
+  color: var(--tertiaryGrey)
 }
 
 /*---------------------*/
@@ -78,15 +118,29 @@
 }
 
 /*---------------------*/
-
+@media only screen and (max-width: 770px) {
+  .headerHello{
+    margin-bottom: -0.5rem;
+  }
+  .homeImage{
+    opacity: .25;
+    margin-top: 8rem;
+  }
+}
 @media only screen and (max-width: 480px) {
+
+  .homeContainer{
+    max-height: calc(100vh + 3.5rem);
+  }
   .headerContainer {
     gap: 1.5rem;
   }
   .homeHeadingText {
     gap: 1.5rem;
   }
-  .headerAbout {
-    max-width: 100%;
+  .imageContainer{
+    max-width: 100% !important;
+    margin: 0 !important;
   }
+
 }

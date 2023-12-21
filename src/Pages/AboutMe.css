@@ -1,15 +1,31 @@
+.aboutBackground {
+  background-image: linear-gradient(
+    to left bottom,
+    #232323,
+    #252525,
+    #262626,
+    #282828,
+    #2a2a2a,
+    #2a2a2a,
+    #2a2a2a,
+    #2a2a2a,
+    #282828,
+    #262626,
+    #252525,
+    #232323
+  );
+}
 .aboutIntro {
   text-align: center;
   font-size: var(--font-h0);
   font-weight: var(--font-bold);
-  color: var(--primaryGrey);
+  color: var(--globalWhite);
   padding: 4rem 0;
   animation: onLoad 800ms;
 }
 .aboutContainer {
-  margin-bottom: var(--space-64px);
   max-width: 1100px;
-  padding: 0 1rem;
+  padding: 8.75rem 1rem 4rem 1rem;
 
   display: grid;
   margin-left: auto;
@@ -47,6 +63,7 @@
 .profileImageContainer {
   overflow: hidden;
   border-radius: var(--radius-large);
+  filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.5));
 }
 .profileImageContainer img {
   width: 100%;
@@ -64,18 +81,26 @@
 .profileSocial {
   display: flex;
   flex-direction: row;
-  gap: var(--space-24px);
-  background: #f6f6f6;
-  padding: var(--space-24px);
+  gap: var(--space-16px);
+  background: #232323;
+  border: 1px solid #323232;
+  filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.5));
+  padding: var(--space-16px);
   align-items: center;
   border-radius: var(--radius-large);
+  transition: all ease-in 200ms;
 }
+.profileSocial:hover {
+  background-color: #323232;
+  transform: scale(105%);
+}
+
 .socialIcon {
   display: flex;
   align-items: center;
 }
-.socialIcon svg{
-  fill: var(--primaryGrey);
+.socialIcon svg {
+  fill: #a9a9a9;
   opacity: 0.4;
 }
 .iconText {
@@ -86,15 +111,15 @@
 .iconTextTitle {
   line-height: 0.625rem;
   font-size: 0.875rem;
-  font-weight: var(--font-semibold);
-  color: var(--primaryGrey);
+  font-weight: var(--font-regular);
+  color: #a9a9a9;
   opacity: 0.8;
 }
 .iconTextDescription {
   line-height: 0.6875rem;
   font-size: 1rem;
-  font-weight: var(--font-bold);
-  color: var(--primaryGrey);
+  font-weight: var(--font-semibold);
+  color: #a9a9a9;
 }
 
 /* ABOUT ME TEXT */
@@ -104,16 +129,19 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-24px);
-  color: var(--primaryGrey);
+  font-weight: var(--font-regular);
+  color: #a9a9a9;
 }
 
-.paragraph{
+.paragraph {
   font-size: 1rem;
-  color: var(--secondaryGrey)
+  font-weight: var(--font-regular);
+  color: #a9a9a9;
 }
 
 .aboutText h2 {
   font-size: var(--font-h4);
+  color: #efefef;
   line-height: 120%;
 }
 

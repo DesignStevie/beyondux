@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #232323;
 }
 
 .footerContainer {
@@ -25,7 +25,7 @@
 }
 
 .footerHeading{
-  color:var(--primaryGrey);
+  color:#efefef;
   font-size: 1rem;
   font-weight: var(--font-semibold);
   padding-bottom: var(--space-8px);
@@ -34,29 +34,27 @@
 .footerLink{
   font-weight: var(--font-medium);
   text-decoration: none;
-  color: #828282;
+  color: #a9a9a9;
   line-height: 12px;
 }
 
 .footerLink:hover{
-  color: var(--primaryGrey);
+  color: #efefef;
 }
 .email{
   font-weight: var(--font-medium);
   line-height: 12px;
-  color: #828282;
+  color: #a9a9a9;
 }
-
-.email:hover{
-  color:var(--primaryGrey);
+.logo{
+  fill:#a9a9a9
 }
-
 .footerMadeby {
   font-size: 0.75rem;
   padding-top: var(--space-64px);
   padding-bottom: 4rem;
   text-align: center;
-  color: #828282;
+  color: #a9a9a9;
   font-weight: var(--font-medium);
 }
 .footerMadeby p{

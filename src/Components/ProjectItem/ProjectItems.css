@@ -192,7 +192,7 @@
     font-size: 1rem;
   }
   .itemImageContainer {
-    padding: 0 var(--space-16px) var(--space-16px) var(--space-16px);
+    padding: 0 var(--space-24px) var(--space-40px) var(--space-24px);
     width: auto;
   }
   .titleBlack {
@@ -213,11 +213,8 @@
 
 /* MOBILES */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
   .itemContainerConstraint {
     margin: 0;
-  }
-  .itemImageContainer {
-    padding: 1rem;
   }
 }
