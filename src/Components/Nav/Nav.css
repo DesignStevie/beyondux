@@ -23,6 +23,7 @@
 .navItemsMobile {
   display: none;
   margin-left: auto;
+
 }
 
 .navMenuContainer {
@@ -36,6 +37,7 @@
 .navMenu {
   display: flex;
   align-items: center;
+  stroke:#a9a9a9;
 }
 .navMenuItems {
   margin-top: 2.5rem;
@@ -48,6 +50,7 @@
   color: #a9a9a9;
   font-size: 1rem;
 }
+
 .navMenuLinks {
   align-items: center;
   display: flex;
@@ -114,7 +117,7 @@
   }
 
   .navMenuLink {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .navItemsMobile {

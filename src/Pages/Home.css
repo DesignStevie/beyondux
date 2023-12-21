@@ -6,7 +6,7 @@
 .homeContainer{
   width: fit-content;
   min-width: 80vw;
-  max-height: 80vh;
+  max-height: 75vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -30,7 +30,7 @@
 }
 
 .imageContainer{
-  max-width:50%;
+  max-width:40%;
   margin-left: auto;
 }
 .homeImage{
@@ -91,6 +91,10 @@
   color: var(--tertiaryGrey)
 }
 
+.buttonAboutMe{
+  width:auto;
+}
+
 /*---------------------*/
 
 .sectionHeading .headerLine {
@@ -126,6 +130,10 @@
     opacity: .25;
     margin-top: 8rem;
   }
+  .imageContainer{
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
 }
 @media only screen and (max-width: 480px) {
 
@@ -138,9 +146,6 @@
   .homeHeadingText {
     gap: 1.5rem;
   }
-  .imageContainer{
-    max-width: 100% !important;
-    margin: 0 !important;
-  }
+
 
 }

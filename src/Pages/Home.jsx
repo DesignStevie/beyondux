@@ -26,7 +26,7 @@ function Home() {
                 products and improving existing ones by crafting stunning
                 experiences that are engaging, intuitive , and user-centric.
               </div>
-              <NavLink to="/aboutme">
+              <NavLink className="buttonAboutMe" to="/aboutme">
                 <button className="roundButton buttonSecondary">
                   Read more
                 </button>

@@ -75,13 +75,11 @@ function Nav() {
             >
               <path
                 d="M1 1H25"
-                stroke="#333333"
                 strokeWidth="2"
                 strokeLinecap="round"
               />
               <path
                 d="M1 9H25"
-                stroke="#333333"
                 strokeWidth="2"
                 strokeLinecap="round"
               />
@@ -104,13 +102,11 @@ function Nav() {
             >
               <path
                 d="M1.51465 18.4844L18.4852 1.51381"
-                stroke="#333333"
                 strokeWidth="2"
                 strokeLinecap="round"
               />
               <path
                 d="M1.51465 1.51562L18.4852 18.4862"
-                stroke="#333333"
                 strokeWidth="2"
                 strokeLinecap="round"
               />
