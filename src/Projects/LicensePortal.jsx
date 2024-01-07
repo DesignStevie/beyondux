@@ -268,7 +268,7 @@ function LicensePortal() {
         <img src={finalImage} alt="chapter" />
       </div>
       <div className="viewMore">
-        <hr className="line" />
+      <hr className="seperator" />
         <h2>More Projects</h2>
       </div>
       <ViewMore project="/license-portal" />

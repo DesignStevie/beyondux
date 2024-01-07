@@ -6,6 +6,8 @@ import FoundationTypography from "../Images/designSystem/typography.png";
 import FoundationSpace from "../Images/designSystem/space.png";
 import ComponentButtons from "../Images/designSystem/buttons.png";
 import ComponentTextboxes from "../Images/designSystem/textboxes.png";
+import DocumentationConcept01 from "../Images/designSystem/documentationConcept01.png";
+import DocumentationConcept02 from "../Images/designSystem/documentationConcept02.png";
 import "./ProjectLayout.css";
 import BackButton from "../Components/BackButton/BackButton";
 import ViewMore from "../Components/ViewMore/ViewMore";
@@ -359,8 +361,14 @@ function DesignSystem() {
           </div>
         </div>
       </div>
+      <div className="chapterImage imageSpacing imageDropshadow">
+        <img src={DocumentationConcept01} alt="chapter" />
+      </div>
+      <div className="chapterImage imageSpacing imageDropshadow">
+        <img src={DocumentationConcept02} alt="chapter" />
+      </div>
       <div className="viewMore">
-        <hr className="line" />
+      <hr className="seperator" />
         <h2>More Projects</h2>
       </div>
       <ViewMore project="/design-system" />

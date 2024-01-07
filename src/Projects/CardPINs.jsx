@@ -246,7 +246,7 @@ function CardPINs() {
         <video className="walkthrough" src={Walkthrough} playsInline autoPlay loop muted preload="auto" />
       </div>
       <div className="viewMore">
-        <hr className="line" />
+      <hr className="seperator" />
         <h2>More Projects</h2>
       </div>
       <ViewMore project="/card-PINs" />

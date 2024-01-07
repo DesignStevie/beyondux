@@ -8,6 +8,7 @@ import finalImage from "../Images/twoFactorAuth/header.png";
 import "./ProjectLayout.css";
 import BackButton from "../Components/BackButton/BackButton";
 import ViewMore from "../Components/ViewMore/ViewMore";
+import Walkthrough from "../Images/twoFactorAuth/walkthrough.mp4";
 
 function TwoFactorAuth() {
   return (
@@ -213,8 +214,11 @@ function TwoFactorAuth() {
       <div className="chapterImage imageSpacing">
         <img src={finalImage} alt="chapter" />
       </div>
+      <div className="chapterImage imageWhiteBorder imageDropshadow imageSpacing">
+        <video className="walkthrough" src={Walkthrough} playsInline autoPlay loop muted preload="auto" />
+      </div>
       <div className="viewMore">
-        <hr className="line"/>
+      <hr className="seperator" />
         <h2>More Projects</h2>
       </div>
       <ViewMore project="/two-factor-auth" />
