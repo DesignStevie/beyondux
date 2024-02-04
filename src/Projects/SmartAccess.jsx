@@ -1,23 +1,21 @@
 import React from "react";
 import Footer from "../Components/Footer/Footer";
-import HeaderImage from "../Images/onboarding/header.png";
-import ResearchImage from "../Images/onboarding/research.png";
-import IdeateImage from "../Images/onboarding/ideate.png";
-import UnderstandImage from "../Images/onboarding/understand.png";
-//import LofiDesign from "../Images/onboarding/lofidesign.png";
-import finalImage from "../Images/onboarding/final.png";
-// import Walkthrough from "../Images/onboarding/walkthrough.mp4";
+import HeaderImage from "../Images/smartAccess/tile.png";
+//import ResearchImage from "../Images/onboarding/research.png";
+import IdeateImage from "../Images/smartAccess/ideate.png";
+//import UnderstandImage from "../Images/onboarding/understand.png";
+//import finalImage from "../Images/onboarding/final.png";
 import "./ProjectLayout.css";
 import BackButton from "../Components/BackButton/BackButton";
 import ViewMore from "../Components/ViewMore/ViewMore";
 
-function Onboarding() {
+function SmartAccess() {
   return (
     <>
       <BackButton />
       <div className="projectHeaderContainer">
         <div className="containerPlain">
-          <div className="projectHeader">Onboarding</div>
+          <div className="projectHeader">SmartAccess</div>
           <div className="projectDescription">
             <div className="company">
               <h4>Company</h4>
@@ -29,7 +27,7 @@ function Onboarding() {
               <h4>Team</h4>
               <ul>
                 <li>4 Engineers</li>
-                <li>2 Testers</li>
+                <li>1 Tester</li>
                 <li>1 Product Owner</li>
               </ul>
             </div>
@@ -55,74 +53,50 @@ function Onboarding() {
           <h2 className="header">Understand</h2>
           <h3 className="subHeader">Context</h3>
           <div className="text">
-            One of my squad's main focus was to shift a pre-existing on-premise
-            software to an all-cloud solution while overhauling and improving
-            all usability with new and existing customers.
+            One of our team's primary objectives is to develop a versatile
+            workflow engine designed to transform into an intuitive builder for
+            end-users. This workflow builder is engineered to facilitate the
+            creation of custom forms, adhering to stringent business security
+            policies.
             <br />
             <br />
-            A large feature that we needed to overcome was an onboarding process
-            of new Cardholder/Users to the site, this would be a new feature
-            compared to the on-premise software but still utilising it’s
-            existing features.
-            <br />
-            <br />I took to the task working with my squad in an agile
-            environment to iterate on the feature to create a feasible
-            onboarding solution.
+            Upon submission, these forms undergo a review process by an
+            appointed Approver, who holds the authority to grant or deny
+            permissions for various requests. These requests can range widely,
+            encompassing card issuance, access permissions, contractor
+            onboarding, and much more, streamlining critical business
+            operations.
           </div>
           <h3 className="subHeader">Discovery</h3>
           <div className="text">
-            We first began reaching out to our external stakeholders and looked
-            at the existing on-premise solution for onboarding cardholders, we
-            identified our target personas and created a journey map that
-            reflects those business processes, we found that it had no clear
-            built-in process for onboarding users as it was built to accommodate
-            any type of business workflow, so every business would have its own
-            set of workflows and could differ vastly from one another so we took
-            the key similarities instead.
+            We reached out to our stakeholders to give us more insight on
+            customers pain points and the daily challenges they faced.
             <br />
             <br />
-            We also discovered this was a usability issue as it would also
-            require extensive training and modules for the customers to be able
-            to use and understand first.
-            <br />
-            <br />
-            We knew we had to explore and create a solution that could do the
-            same thing but still be easy and intuitive to understand and use
-            without the training and modules.
           </div>
         </div>
-      </div>
-      <div className="chapterImage">
-        <img src={UnderstandImage} alt="chapter" />
-      </div>
-      {/* CHAPTER 02 */}
-      <div className="containerPlain">
+        <hr className="seperator" />
+        {/* CHAPTER 02 */}
         <div className="gridContainer">
           <div className="chapter">02</div>
           <h2 className="header">Research</h2>
           <h3 className="subHeader">Gather Insights</h3>
           <div className="text">
-            I then began speaking and interviewing our existing customers that
-            use this feature on a day-to-day basis, these customers would fit
-            our targeted persona as well so that we knew we are getting
-            information from actual users.
+            I began reaching out to our external customers to validate our
+            predictions and looked at the existing manual workflows for card,
+            access and contractor onboarding, we identified our target personas
+            and created a journey map that reflects those business processes, we
+            found as predicted that most of the work is manual and took up
+            valuable time for admins.
             <br />
             <br />
-            Because the current solution is quite all over the place we found
-            out through our customers that a step-for-step process in onboarding
-            a new Cardholder/User where all the necessary steps can be provided
-            for them seemed to be a potential solution.
-            <br />
-            <br />I completed my research to look at competitors and how they
-            achieve their solutions, as well as non-competitor research to see
-            how other organisations do step-for-step onboarding.
+            Additonally viewing and doing extensive researching on exisiting
+            workflow builders in the market and picking key aspects that could
+            be benificial to the experience of our product, as well as
+            understanding common patterns and trends between all of them.
           </div>
         </div>
-      </div>
-      <div className="chapterImage">
-        <img src={ResearchImage} alt="chapter" />
-      </div>
-      <div className="containerPlain">
+        <hr className="seperator" />
         {/* CHAPTER 03 */}
         <div className="gridContainer">
           <div className="chapter">03</div>
@@ -222,54 +196,28 @@ function Onboarding() {
           <h2 className="header">Validate</h2>
           <h3 className="subHeader">Prototyping</h3>
           <div className="text">
-            After we put together all the pieces in our ideation phase I then
-            set out to create the final prototype which we could go and test
-            with our customers/users to validate the solution.
-            <br />
-            <br />
-            I designed a hi-fi prototype in Figma using the design system I
-            created for our entire department for all our different platforms
-            and projects.
-            <br />
-            <br />
-            After going back to my squad for some refinements, feedback, and
-            critiques I then came up with a final testing solution that I could
-            go test with our customers.
+            Over a 2 year period and multiple iterations I developed and created
+            multiple different prototypes to take to the field to be tested
+            whilst coming back to refine and reform again.
           </div>
-          <h3 className="subHeader">Prototyping</h3>
+          <h3 className="subHeader">User Testing</h3>
           <div className="text">
-            I experimented with a new way of testing our prototypes by using a
-            platform called Useberry. Userberry is an online platform where I
-            can upload my Figma prototypes, create questions and give some
-            context as to what the user needs to complete.
-            <br />
-            <br />
-            Because we have customers all across the world I thought it would be
-            great to create this on Useberry and send out a mass link to all our
-            external customers where they can in their own time complete the
-            test.
-            <br />
-            <br />I received way more results than expected which was fantastic
-            and viewed all recordings and completion rates, then compiled the
-            results to find that the prototype was a great success. We moved
-            this straight over to development..
+            We conducted multiple usability tests with internal stakeholders as
+            well as external customers interested in the product that fit parts
+            of the products different personas, we went on site to Universities
+            to test with a large group of students who would be a common persona
+            who would be a requester in the system.
           </div>
         </div>
       </div>
-      {/* <div className="chapterImage">
-      <img src={LofiDesign} alt="chapter" />
-    </div> */}
-      <div className="chapterImage imageSpacing">
-        <img src={finalImage} alt="chapter" />
-      </div>
       <div className="viewMore">
-      <hr className="seperator" />
+        <hr className="seperator" />
         <h2>More Projects</h2>
       </div>
-      <ViewMore project="/onboarding" />
+      <ViewMore project="/smart-access" />
       <Footer />
     </>
   );
 }
 
-export default Onboarding;
+export default SmartAccess;

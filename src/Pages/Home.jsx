@@ -22,11 +22,8 @@ function Home() {
               <div className="headerName">Steven Odendaal</div>
               <hr className="line" />
               <div className="headerAbout">
-                With more than two years of experience as a UX/UI designer, I
-                specialize in both innovating new products and enhancing
-                existing ones. My expertise lies in creating captivating,
-                user-friendly, and intuitively designed experiences that
-                prioritize the user at the center.
+                With more than two years of experience as a UX/UI designer, my expertise lies in creating captivating,
+                user-friendly, and intuitively designed experiences that prioritize the user at the center.
               </div>
               <NavLink className="buttonAboutMe" to="/aboutme">
                 <button className="roundButton buttonSecondary">

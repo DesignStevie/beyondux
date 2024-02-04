@@ -45,7 +45,6 @@ function LicensePortal() {
           <img src={HeaderImage} alt="chapter" />
         </div>
       </div>
-
       <div className="containerPlain">
         {/* CHAPTER 01 */}
         <div className="gridContainer">

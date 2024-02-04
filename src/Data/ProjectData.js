@@ -39,20 +39,6 @@ const projectData = [
     }
   },
 
-  // ------------------ Onboarding ------------------ //
-  {
-    release: true,
-
-    //Project Cover
-    cover: {
-      name:"Onboarding",
-      link: "/onboarding",
-      description:
-        "Creating a cloud security management solution for cardholder and building control.",
-      showcase: require("../Images/onboarding/tile.png"),
-    }
-  },
-
   // ------------------ Design System ------------------ //
   {
     release: true,
@@ -66,6 +52,35 @@ const projectData = [
       showcase: require("../Images/designSystem/tile.png"),
     }
   },
+
+  // ------------------ Smart Access ------------------ //
+  {
+    release: true,
+
+    //Project Cover
+    cover: {
+      name:"Smart Access",
+      link: "/smart-access",
+      description:
+        "Creating a cloud security workflow builder to manage all user access security requests.",
+      showcase: require("../Images/smartAccess/tile.png"),
+    }
+  },
+    // ------------------ Workload Tracker ------------------ //
+    {
+      release: false,
+  
+      //Project Cover
+      cover: {
+        name:"Workload Tracker",
+        link: "/workload-tracker",
+        description:
+          "Forecasting hours and manpower for Tradies on designated job sites.",
+        showcase: require("../Images/ampt/tile.png"),
+      }
+    },
+
+
 ];
 
 export default projectData;
